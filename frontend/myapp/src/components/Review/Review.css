@@ -1,0 +1,303 @@
+/* Review Component Styles */
+/* .container-fluid.bg-body-tertiary {
+    background-color: #f8f9fa;
+}
+
+.card {
+    max-width: 600px;
+    margin: 0 auto;
+    border: none;
+    background-color: #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+}
+
+.quotes {
+    color: #d6d8db;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #000;
+    border-radius: 50%;
+    padding: 10px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    opacity: 1;
+}
+
+.rounded-circle {
+    border: 2px solid #dee2e6;
+}
+
+.card-title {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.text-secondary {
+    font-size: 0.9rem;
+}
+
+.carousel {
+    padding: 2rem 0;
+}
+
+.carousel-inner {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.carousel-item {
+    transition: transform 0.6s ease, opacity 0.6s ease;
+    margin-right: none;
+}
+
+
+@media (max-width: 768px) {
+    .card {
+        margin: 1rem;
+    }
+
+    .card-body {
+        padding: 1rem;
+    }
+}
+ */
+
+
+
+/* .reviews-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    margin: 2rem auto;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 1.5rem;
+    font-family: Arial, sans-serif;
+}
+
+.review-card {
+    text-align: center;
+}
+
+.review-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.review-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.rating {
+    color: #f4c430;
+    font-size: 1.2rem;
+}
+
+.dots-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background-color: #333;
+}
+
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.review-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.review-card img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.review-card a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.review-card a:hover {
+    text-decoration: underline;
+}
+
+.review-card p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.review-card .text-muted {
+    font-size: 12px;
+    color: #888;
+}
+
+h2 {
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+@media (max-width: 576px) {
+    .review-card {
+        padding: 1rem;
+    }
+
+    .review-card img {
+        width: 40px;
+        height: 40px;
+    }
+} */
+
+
+
+body.dark-mode {
+    background-color: #1f1f1f;
+    color: #f5f5f5;
+}
+
+body.dark-mode .py-3 {
+    background-color: #1f1f1f;
+}
+
+.container-fluid {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.carousel {
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    max-width: 600px;
+    margin: auto;
+}
+
+.card-text {
+    font-size: 1rem;
+    line-height: 1.5;
+    max-height: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.card:hover .card-text {
+    white-space: normal;
+    max-height: none;
+    overflow: visible;
+}
+
+.quotes {
+    color: #6c757d;
+}
+
+img.rounded-circle {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+}
+
+
+.text-secondary {
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .card {
+        max-width: 90%;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    img.rounded-circle {
+        width: 40px;
+        height: 40px;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .text-secondary {
+        font-size: 0.8rem;
+    }
+}

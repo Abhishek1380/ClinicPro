@@ -1,0 +1,129 @@
+import React from 'react';
+import './AboutMe.css';
+
+const AboutMe = () => {
+    return (
+        <div className="container my-5">
+            <div id="aboutMeCarousel" className="carousel slide" data-bs-ride="carousel">
+
+                <div className="carousel-indicators">
+                    <button
+                        type="button"
+                        data-bs-target="#aboutMeCarousel"
+                        data-bs-slide-to="0"
+                        className="active"
+                        aria-current="true"
+                        aria-label="Slide 1"
+                    ></button>
+                    <button
+                        type="button"
+                        data-bs-target="#aboutMeCarousel"
+                        data-bs-slide-to="1"
+                        aria-label="Slide 2"
+                    ></button>
+                </div>
+
+
+                <div className="carousel-inner">
+
+                    <div className="carousel-item active">
+                        <div className="about-me-section">
+                            <div className="doctor-photo text-center mb-41">
+                                <img
+                                    src="https://i.ibb.co/thbYYBk/doccccc.jpg"
+                                    alt="Doctor"
+                                    className="d-block mx-auto"
+                                />
+                            </div>
+                            <div className="doctor-details">
+                                <div className="detail-item mb-4">
+                                    <h4 className="text-primary">Name</h4>
+                                    <p>Dr. Sachin Nichit, MD Homeopath, Fellowship in Advanced Homeopathy, PGDEMS</p>
+                                </div>
+                                <div className="detail-item mb-4">
+                                    <h4 className="text-primary">Biography</h4>
+                                    <p>
+                                        Dr. Satish Nichit is a Homoeopath in Akurdi, Pune and has an experience of 14 years in this field.
+                                        Dr. Satish Nichit practices at Kshitij Homoeopathic Clinic in Akurdi, Pune.
+                                    </p>
+                                </div>
+                                <div className="detail-item mb-4">
+                                    <h4 className="text-primary">Education</h4>
+                                    <p>
+                                        MD Homeopathy<br />
+                                        Fellowship Course in Advanced Homeopathy and PGDEMS from Ruby Hall Pune<br />
+                                        BHMS
+                                    </p>
+                                </div>
+                                <div className="detail-item">
+                                    <h4 className="text-primary">Experience</h4>
+                                    <p>13+ years</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div className="carousel-item">
+                        <div className="about-me-section">
+                            <div className="doctor-photo text-center mb-41">
+                                <img
+                                    src="https://i.ibb.co/RHbN5Ch/images.jpg"
+                                    alt="Doctor"
+                                    className="d-block mx-auto"
+                                />
+                            </div>
+                            <div className="doctor-details">
+                                <div className="detail-item mb-4">
+                                    <h4 className="text-primary">Name</h4>
+                                    <p>Dr. Sachin Nichit, MD Homeopath, Fellowship in Advanced Homeopathy, PGDEMS</p>
+                                </div>
+                                <div className="detail-item mb-4">
+                                    <h4 className="text-primary">Biography</h4>
+                                    <p>
+                                        Dr. Satish Nichit is a Homoeopath in Akurdi, Pune and has an experience of 14 years in this field.
+                                        Dr. Satish Nichit practices at Kshitij Homoeopathic Clinic in Akurdi, Pune.
+                                    </p>
+                                </div>
+                                <div className="detail-item mb-4">
+                                    <h4 className="text-primary">Education</h4>
+                                    <p>
+                                        MD Homeopathy<br />
+                                        Fellowship Course in Advanced Homeopathy and PGDEMS from Ruby Hall Pune<br />
+                                        BHMS
+                                    </p>
+                                </div>
+                                <div className="detail-item">
+                                    <h4 className="text-primary">Experience</h4>
+                                    <p>13+ years</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <button
+                    className="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#aboutMeCarousel"
+                    data-bs-slide="prev"
+                >
+                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span className="visually-hidden">Previous</span>
+                </button>
+                <button
+                    className="carousel-control-next"
+                    type="button"
+                    data-bs-target="#aboutMeCarousel"
+                    data-bs-slide="next"
+                >
+                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span className="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    );
+};
+
+export default AboutMe;

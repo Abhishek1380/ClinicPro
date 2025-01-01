@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    outline: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 15px
+    }
+}
+
+@media screen and (max-width: 465px) {
+    html {
+        font-size: 14px
+    }
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem; */
+    background: #f1f3f6;
+}
+
+.Blogs_container {
+    width: 90%;
+    margin: auto;
+}
+
+.Blogs_div {
+    width: 97%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.Blogs_card {
+    width: 25rem;
+    height: auto;
+    background: #fff;
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.Blogs_card-img-holder {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.Blogs_card-img-holder img {
+    width: 100%;
+    height: auto;
+    max-height: 15rem;
+    object-fit: cover;
+    border-radius: 1.5rem;
+}
+
+.Blogs_blog-title {
+    color: #22215B;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+}
+
+.Blogs_description {
+    padding: 1rem 0;
+    color: #22215B80;
+    font-size: 1rem;
+}
+
+.Blogs_blog-time {
+    font-size: .8rem;
+    color: #22215B;
+}
+
+.Blogs_options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+}
+
+.Blogs_options span {
+    font-weight: 600;
+    color: #22215B;
+}
+
+.Blogs_btn {
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    font-weight: 400;
+    background: #EEF7FE;
+    color: #22215B;
+    cursor: pointer;
+}

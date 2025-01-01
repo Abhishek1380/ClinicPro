@@ -1,0 +1,71 @@
+/* global.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+
+html {
+    /* width: 100%; */
+    /* border-radius: 8px; */
+    margin: 0 auto;
+    /* background-color: #e5e5e5; */
+    font-family: 'Rubik', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    line-height: 1.6;
+    text-decoration: none !important;
+    color: inherit;
+    background-color: #f8f8f8;
+    overflow-x: hidden;
+
+}
+
+* {
+    font-family: 'Rubik', sans-serif;
+}
+
+.special_btn {
+    background-color: #0176C4;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+a:visited {
+    text-decoration: none !important;
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+a:active {
+    text-decoration: none !important;
+}
+
+.book-appointment-container {
+    display: none;
+}
+
+@media screen and (max-width: 430px) {
+    .book-appointment-container {
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #007BFF;
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        padding: 10px 0;
+    }
+
+    .book-appointment-button {
+        font-size: 16px;
+        padding: 10px 20px;
+        background-color: #007BFF;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}

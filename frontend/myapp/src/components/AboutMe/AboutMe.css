@@ -1,0 +1,94 @@
+.mb-41 {
+    margin-bottom: 6.5rem !important;
+}
+
+.about-me-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.doctor-photo {
+    flex: 1;
+    max-width: 400px;
+}
+
+.doctor-photo img {
+    max-width: 360px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+
+    border-radius: 13px;
+}
+
+.doctor-details {
+    flex: 2;
+}
+
+.detail-item {
+    margin-bottom: 1.5rem;
+}
+
+.detail-item h4 {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .about-me-section {
+        flex-direction: column;
+    }
+
+    .doctor-photo {
+        max-width: 100%;
+    }
+
+    .doctor-photo img {
+        margin-bottom: 50%;
+    }
+}
+
+
+
+.about-me-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideIn 1s ease-out forwards;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.detail-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.detail-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .about-me-section {
+        flex-direction: column;
+    }
+
+    .doctor-photo {
+        margin-bottom: 20px;
+    }
+}

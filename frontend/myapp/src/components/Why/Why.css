@@ -1,0 +1,151 @@
+.section_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    align-items: center;
+    justify-content: center;
+}
+
+.why_container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.why_image {
+    flex: 1 1 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.why_image img {
+    width: 100%;
+    max-width: 400px;
+
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.why_flex {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.why_content {
+    text-align: left;
+}
+
+.section_header {
+    font-size: 2rem;
+    color: #2c3e50;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.why_content p {
+    font-size: 1rem;
+    color: #7f8c8d;
+    line-height: 1.6;
+}
+
+.why_grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.why_grid_container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.why_grid_container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.why_grid_container span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: #eaf6fd;
+    border-radius: 50%;
+    font-size: 1.8rem;
+    color: #3498db;
+    flex-shrink: 0;
+}
+
+.why_grid_container div h4 {
+    font-size: 1.2rem;
+    color: #34495e;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.why_grid_container div p {
+    font-size: 0.95rem;
+    color: #7f8c8d;
+    line-height: 1.5;
+}
+
+
+@media (max-width: 992px) {
+    .why_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .why_image {
+        order: -1;
+    }
+
+    .why_grid_container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .why_grid_container span {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .section_header {
+        font-size: 1.8rem;
+    }
+
+    .why_image img {
+        max-width: 300px;
+    }
+
+    .why_grid_container span {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+
+    .why_grid_container div h4 {
+        font-size: 1rem;
+    }
+
+    .why_grid_container div p {
+        font-size: 0.85rem;
+    }
+}
