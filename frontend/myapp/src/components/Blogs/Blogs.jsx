@@ -44,12 +44,12 @@ const Blogs = () => {
                 <div className="Blogs_div">
                     <div className="Blogs_card">
                         <div className="Blogscard-img-holder">
-                            <img src="https://images.unsplash.com/photo-1640102953836-5651f5d6b240?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1024&q=80" alt="Blog image" />
+                            <img src="https://i.ibb.co/tDSSKc9/88888888.jpg" alt="Blog image" />
                         </div>
                         <h3 className="Blogs_blog-title">Learn Microinteraction</h3>
                         <span className="Blogs_blog-time">Monday Jan 20, 2020</span>
                         <p className="Blogs_description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sagittis viverra turpis, non cursus ex accumsan at.
+                            Explore the latest trends in homeopathic remedies and natural healing techniques. Learn how nature’s power can restore balance and improve your health.
                         </p>
                         <div className="Blogs_options">
                             <span>
@@ -61,12 +61,12 @@ const Blogs = () => {
 
                     <div className="Blogs_card">
                         <div className="Blogscard-img-holder">
-                            <img src="https://images.unsplash.com/photo-1640102953836-5651f5d6b240?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1024&q=80" alt="Blog image" />
+                            <img src="https://i.ibb.co/fVRWb1s/rrrrrrrrrrr.jpg" alt="Blog image" />
                         </div>
                         <h3 className="Blogs_blog-title">Learn Microinteraction</h3>
                         <span className="Blogs_blog-time">Monday Jan 20, 2020</span>
                         <p className="Blogs_description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sagittis viverra turpis, non cursus ex accumsan at.
+                            Discover the benefits of holistic wellness practices, including homeopathy and alternative therapies. Find tips for living a balanced and healthy life naturally.
                         </p>
                         <div className="Blogs_options">
                             <span>
@@ -77,12 +77,12 @@ const Blogs = () => {
                     </div>
                     <div className="Blogs_card">
                         <div className="Blogscard-img-holder">
-                            <img src="https://images.unsplash.com/photo-1640102953836-5651f5d6b240?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1024&q=80" alt="Blog image" />
+                            <img src="https://i.ibb.co/TmtNN2k/rrrrr.jpg" alt="Blog image" />
                         </div>
                         <h3 className="Blogs_blog-title">Learn Microinteraction</h3>
                         <span className="Blogs_blog-time">Monday Jan 20, 2020</span>
                         <p className="Blogs_description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sagittis viverra turpis, non cursus ex accumsan at.
+                            Gain insights into effective homeopathic treatments for common ailments. Our blog shares expert advice, remedies, and tips for promoting overall wellness naturally.
                         </p>
                         <div className="Blogs_options">
                             <span>

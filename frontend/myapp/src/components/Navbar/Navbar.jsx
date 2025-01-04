@@ -20,7 +20,7 @@ const Navbar = () => {
             <nav className="navbar fixed-top">
 
                 <div className="logo">
-                    <div className="circle-logo">SN</div>
+                    <div className="circle-logo" style={{ backgroundColor: "rgb(32 148 49);" }}>SN</div>
                     <span>Dr. Satish Nichit</span>
                 </div>
                 <ul className={`nav-links ${isMenuActive ? 'active' : ''}`}>
@@ -28,7 +28,7 @@ const Navbar = () => {
                     <li><Link to="/treatment" className='font-color'>Treatments</Link></li>
                     <li><Link to="/blogs" className='font-color'>Health Blogs</Link></li>
                     <li><Link to="/aboutme" className='font-color'>About Us</Link></li>
-                    <li><Link to="/bookappointment" className='font-color special_btn btn-outline-success ' style={{ borderRadius: "7px", backgroundColor: "#0176c4", color: "white", fontWeight: "bold" }}>Book Appointment</Link></li>
+                    <li><Link to="/bookappointment" className='font-color special_btn btn-outline-success ' style={{ borderRadius: "7px", backgroundColor: "#0176c4", color: "white", fontWeight: "bold", background: " rgb(32 148 49)" }}>Book Appointment</Link></li>
                 </ul>
 
                 <div className="controls">

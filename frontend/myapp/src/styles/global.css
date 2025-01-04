@@ -1,5 +1,3 @@
-/* global.css */
-
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
 
 html {
@@ -15,6 +13,20 @@ html {
     background-color: #f8f8f8;
     overflow-x: hidden;
 
+    background-color: #f1fff2 !important;
+    overflow-x: hidden;
+}
+
+
+body {
+    background-color: #f1fff2 !important;
+    overflow-x: hidden;
+    margin: 0;
+
+}
+
+.website_backgroundColor {
+    background-color: #f1fff2;
 }
 
 * {
@@ -45,6 +57,10 @@ a:active {
     display: none;
 }
 
+.component_margin {
+    margin: 60px auto;
+}
+
 @media screen and (max-width: 430px) {
     .book-appointment-container {
         display: flex;
@@ -68,4 +84,14 @@ a:active {
         border-radius: 5px;
         cursor: pointer;
     }
+}
+
+
+
+.text-primaryy {
+    color: #12ac8e !important;
+}
+
+.btn-primaryy {
+    background-color: #12ac8e !important;
 }

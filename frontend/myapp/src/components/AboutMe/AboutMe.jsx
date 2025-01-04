@@ -37,18 +37,18 @@ const AboutMe = () => {
                             </div>
                             <div className="doctor-details">
                                 <div className="detail-item mb-4">
-                                    <h4 className="text-primary">Name</h4>
+                                    <h4 className="text-primaryy">Name</h4>
                                     <p>Dr. Sachin Nichit, MD Homeopath, Fellowship in Advanced Homeopathy, PGDEMS</p>
                                 </div>
                                 <div className="detail-item mb-4">
-                                    <h4 className="text-primary">Biography</h4>
+                                    <h4 className="text-primaryy">Biography</h4>
                                     <p>
                                         Dr. Satish Nichit is a Homoeopath in Akurdi, Pune and has an experience of 14 years in this field.
                                         Dr. Satish Nichit practices at Kshitij Homoeopathic Clinic in Akurdi, Pune.
                                     </p>
                                 </div>
                                 <div className="detail-item mb-4">
-                                    <h4 className="text-primary">Education</h4>
+                                    <h4 className="text-primaryy">Education</h4>
                                     <p>
                                         MD Homeopathy<br />
                                         Fellowship Course in Advanced Homeopathy and PGDEMS from Ruby Hall Pune<br />
@@ -56,7 +56,7 @@ const AboutMe = () => {
                                     </p>
                                 </div>
                                 <div className="detail-item">
-                                    <h4 className="text-primary">Experience</h4>
+                                    <h4 className="text-primaryy">Experience</h4>
                                     <p>13+ years</p>
                                 </div>
                             </div>
@@ -75,18 +75,18 @@ const AboutMe = () => {
                             </div>
                             <div className="doctor-details">
                                 <div className="detail-item mb-4">
-                                    <h4 className="text-primary">Name</h4>
+                                    <h4 className="text-primaryy">Name</h4>
                                     <p>Dr. Sachin Nichit, MD Homeopath, Fellowship in Advanced Homeopathy, PGDEMS</p>
                                 </div>
                                 <div className="detail-item mb-4">
-                                    <h4 className="text-primary">Biography</h4>
+                                    <h4 className="text-primaryy">Biography</h4>
                                     <p>
                                         Dr. Satish Nichit is a Homoeopath in Akurdi, Pune and has an experience of 14 years in this field.
                                         Dr. Satish Nichit practices at Kshitij Homoeopathic Clinic in Akurdi, Pune.
                                     </p>
                                 </div>
                                 <div className="detail-item mb-4">
-                                    <h4 className="text-primary">Education</h4>
+                                    <h4 className="text-primaryy">Education</h4>
                                     <p>
                                         MD Homeopathy<br />
                                         Fellowship Course in Advanced Homeopathy and PGDEMS from Ruby Hall Pune<br />
@@ -94,7 +94,7 @@ const AboutMe = () => {
                                     </p>
                                 </div>
                                 <div className="detail-item">
-                                    <h4 className="text-primary">Experience</h4>
+                                    <h4 className="text-primaryy">Experience</h4>
                                     <p>13+ years</p>
                                 </div>
                             </div>

@@ -3,9 +3,9 @@ import './Videos.css';
 
 const Videos = () => {
     return (
-        <div className="video-container">
+        <div className="video-container" style={{ margin: "2.9rem auto" }}>
 
-            <h3 className="text-center" style={{ margin: "50px auto" }}>Videos related to Homeopathy</h3>
+            <h3 className="text-center" style={{ marginBottom: "1.9rem" }}>Videos related to Homeopathy</h3>
             <div className="video-row">
                 <div className="video-item">
                     <div className="video-wrapper video_16by9">

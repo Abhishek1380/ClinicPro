@@ -1,34 +1,34 @@
 .video-container {
-    width: 100%;
-    margin: 0 auto;
-    padding: 1px;
+    margin: 2.9rem auto;
+    max-width: 1200px;
+    padding: 0 1rem;
+}
+
+.text-center {
+    text-align: center;
+    margin-bottom: 1.9rem;
 }
 
 .video-row {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    gap: 20px;
-    margin-bottom: 20px;
-    width: 80%;
-    margin: auto;
-}
-
-.center-row {
+    gap: 1.5rem;
     justify-content: center;
 }
 
 .video-item {
-    flex: 1 1 calc(33.333% - 20px);
+    flex: 1 1 calc(33.333% - 1rem);
+    max-width: calc(33.333% - 1rem);
     box-sizing: border-box;
 }
 
 .video-wrapper {
     position: relative;
     width: 100%;
-    height: 0;
-    padding-bottom: 56.25%;
+    padding-top: 56.25%;
     overflow: hidden;
+    background-color: #000;
+    border-radius: 8px;
 }
 
 .video-wrapper iframe {
@@ -37,39 +37,19 @@
     left: 0;
     width: 100%;
     height: 100%;
+    border: none;
 }
-
-.center-row .video-item {
-    flex: 1 1 48%;
-
-}
-
 
 @media (max-width: 768px) {
-
-
     .video-item {
-        flex: 1 1 100%;
-    }
-
-    .center-row {
-        justify-content: center;
-    }
-
-    .center-row .video-item {
-        flex: 1 1 80%;
-
+        flex: 1 1 calc(50% - 1rem);
+        max-width: calc(50% - 1rem);
     }
 }
 
 @media (max-width: 480px) {
-
-
-    .video-row {
-        flex-direction: column;
-    }
-
-    .center-row .video-item {
+    .video-item {
         flex: 1 1 100%;
+        max-width: 100%;
     }
 }

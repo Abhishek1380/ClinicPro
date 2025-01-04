@@ -16,13 +16,13 @@ const FAQ = () => {
     }, []);
 
     return (
-        <div className="container my-5">
+        <div className="container my-5 " style={{ paddingTop: "1.3rem" }}>
             <h2 className="text-center mb-4">Frequently Asked Questions</h2>
             <div id="faqAccordion">
                 {faqList.length > 0 ? (
                     faqList.map((faq, index) => (
                         <div className="card faq-card" key={index}>
-                            <div className="card-header" id={`heading${index}`}>
+                            <div className="card-header" id={`heading${index}`} >
                                 <h5 className="mb-0">
                                     <button
                                         className="btn btn-link faq-btn"
@@ -31,6 +31,10 @@ const FAQ = () => {
                                         data-bs-target={`#collapse${index}`}
                                         aria-expanded={index === 0 ? "true" : "false"}
                                         aria-controls={`collapse${index}`}
+                                        style={{
+                                            color: "#218838",
+                                            fontWeight: 500
+                                        }}
                                     >
                                         {faq.question}
                                     </button>

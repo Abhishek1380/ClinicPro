@@ -2,6 +2,11 @@
     margin-bottom: 6.5rem !important;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
 .about-me-section {
     display: flex;
     flex-wrap: wrap;
@@ -86,9 +91,43 @@
 @media (max-width: 768px) {
     .about-me-section {
         flex-direction: column;
+        gap: 0;
     }
 
-    .doctor-photo {
-        margin-bottom: 20px;
+    .doctor-photo img {
+        margin-bottom: 0%;
     }
+}
+
+
+.carousel-item {
+    opacity: 0;
+    transform: translateX(0);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+
+.carousel-item.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.carousel-item-next .about-me-section:first-child,
+.carousel-item-prev .about-me-section:first-child {
+    transform: translateX(-100%);
+}
+
+.carousel-item-next .about-me-section:last-child,
+.carousel-item-prev .about-me-section:last-child {
+    transform: translateX(100%);
+}
+
+.carousel-item-next.active .about-me-section:first-child,
+.carousel-item-prev.active .about-me-section:first-child {
+    transform: translateX(0);
+}
+
+.carousel-item-next.active .about-me-section:last-child,
+.carousel-item-prev.active .about-me-section:last-child {
+    transform: translateX(0);
 }

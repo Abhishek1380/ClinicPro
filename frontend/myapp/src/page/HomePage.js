@@ -29,7 +29,7 @@ const HomePage = () => {
             <QuickDoctorInfo />
             <Services />
             <Why />
-            <HomeAboutMe />
+            {/* <HomeAboutMe /> */}
             <MapAndTimings />
             <div className="text-center" style={{ margin: "50px auto" }}>
                 <h3>Reviews</h3>

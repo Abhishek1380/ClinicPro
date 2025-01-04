@@ -7,7 +7,6 @@ body.dark-mode .MapAndTimings {
     background-color: #1f1f1f;
 }
 
-
 .MapAndTimings {
     display: flex;
     flex-wrap: wrap;
@@ -22,7 +21,6 @@ body.dark-mode .MapAndTimings {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     font-family: 'Arial', sans-serif;
 }
-
 
 .map-container {
     flex: 1 1 45%;
@@ -134,8 +132,7 @@ body.dark-mode .MapAndTimings {
     font-size: 1rem;
 }
 
-
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .MapAndTimings {
         flex-direction: column;
     }
@@ -152,114 +149,85 @@ body.dark-mode .MapAndTimings {
     .button {
         flex: 1;
     }
-
 }
 
-
-.MapAndTimings {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 2rem;
-    padding: 2rem;
-    background-color: #f9f9f9;
-    opacity: 0;
-    animation: fadeIn 3s ease-in-out forwards;
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
+@media (max-width: 768px) {
+    .MapAndTimings {
+        flex-direction: column;
+        padding: 20px;
     }
 
-    100% {
-        opacity: 1;
+    .map-container,
+    .opd-hours {
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+    }
+
+    .map-box__iframe {
+        height: 220px;
+    }
+
+    .button {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .map-box__address {
+        font-size: 0.9rem;
+    }
+
+    .opd-hours__title {
+        font-size: 1.2rem;
+    }
+
+    .opd-hours__day {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .day-name,
+    .day-hours {
+        font-size: 1rem;
+    }
+
+    .button--directions {
+        font-size: 1rem;
+        padding: 12px 20px;
+    }
+
+    .button--call-clinic {
+        font-size: 1rem;
+        padding: 12px 20px;
     }
 }
 
-.map-container {
-    flex: 1;
-    min-width: 300px;
-    max-width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
+@media (max-width: 480px) {
+    .MapAndTimings {
+        padding: 10px;
+    }
 
-.map-box {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+    .map-box__iframe {
+        height: 200px;
+    }
 
-.map-box__iframe {
-    width: 100%;
-    height: 300px;
-    border: none;
-}
+    .button {
+        font-size: 1.1rem;
+    }
 
-.map-box__address {
-    margin: 1rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #333;
-}
+    .opd-hours__title {
+        font-size: 1.2rem;
+    }
 
-.map-box__actions {
-    display: flex;
-    gap: 1rem;
-    margin: 1rem;
-}
+    .opd-hours__schedule {
+        gap: 5px;
+    }
 
-.button {
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    color: #fff;
-    background-color: #28a745;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
+    .opd-hours__day {
+        padding: 5px;
+    }
 
-.button:hover {
-    background-color: #218838;
-}
-
-.opd-hours {
-    flex: 1;
-    min-width: 300px;
-    max-width: 40%;
-}
-
-.opd-hours__title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 1rem;
-}
-
-.opd-hours__schedule {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.opd-hours__day {
-    display: flex;
-    justify-content: space-between;
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background-color: #fff;
-}
-
-.day-name {
-    font-weight: bold;
-    color: #555;
-}
-
-.day-hours {
-    color: #888;
+    .day-name,
+    .day-hours {
+        font-size: 0.9rem;
+    }
 }

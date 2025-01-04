@@ -30,46 +30,45 @@ const BookAppointment = () => {
     };
 
     return (
-        <div className="book-appointment">
-
-            <section className="hero-section text-center py-5">
-                <div className="container">
-                    <h1 className="text-primary mb-3">Book Your Appointment</h1>
+        <div className="book-appointment ">
+            <section className="hero-section text-center py-5 ">
+                <div className="container" style={{ marginTop: "1rem" }}>
+                    <h1 className="text-primaryy mb-3">Book Your Appointment</h1>
                     <p className="text-muted">
                         Schedule your visit with ease and convenience. We’re here to provide you the best healthcare services.
                     </p>
                 </div>
-            </section>
+            </section >
 
             <section className="form-section py-5">
                 <div className="container">
-                    <div className="row justify-content-center align-items-center">
-                        <div className="col-md-4 mb-4">
+                    <div className="row justify-content-center align-items-center" style={{ width: "100%" }}>
+                        <div className="col-md-4 mb-4 slide-from-left">
                             <div className="card shadow p-4 contact-sidebar">
-                                <h4 className="text-primary">Need Help?</h4>
+                                <h4 className="text-primaryy">Need Help?</h4>
                                 <p className="text-muted mb-3">
                                     Contact us for assistance with your appointment.
                                 </p>
                                 <ul className="list-unstyled">
                                     <li className="mb-2">
-                                        <strong>Phone:</strong> +91-9403530005
+                                        <strong className="text-primaryy">Phone:</strong> +91-9403530005
                                     </li>
                                     <li className="mb-2">
-                                        <strong>Email:</strong> support@clinic.com
+                                        <strong className="text-primaryy">Email:</strong> support@clinic.com
                                     </li>
                                     <li>
-                                        <strong>Address:</strong> Shop no 20, Sukhwani Heritage, Chikhali Akurdi Rd, near Bhalerao ENT hospital, panchatara Nagar, Bijali Nagar, Ganga Nagar, Akurdi, Pune, Pimpri-Chinchwad, Maharashtra 411035
+                                        <strong className="text-primaryy">Address:</strong> Shop no 20, Sukhwani Heritage, Chikhali Akurdi Rd, near Bhalerao ENT hospital, panchatara Nagar, Bijali Nagar, Ganga Nagar, Akurdi, Pune, Pimpri-Chinchwad, Maharashtra 411035
                                     </li>
                                 </ul>
                             </div>
                         </div>
 
-                        <div className="col-md-6">
+                        <div className="col-md-6 slide-from-right">
                             <div className="card shadow-lg p-4">
-                                <h2 className="text-center text-primary mb-4">Appointment Form</h2>
+                                <h2 className="text-center text-primaryy mb-4">Appointment Form</h2>
                                 <form onSubmit={handleSubmit}>
                                     <div className="mb-4">
-                                        <label htmlFor="name" className="form-label text-primary">
+                                        <label htmlFor="name" className="form-label text-primaryy">
                                             Full Name
                                         </label>
                                         <input
@@ -83,7 +82,7 @@ const BookAppointment = () => {
                                         />
                                     </div>
                                     <div className="mb-4">
-                                        <label htmlFor="mobile" className="form-label text-primary">
+                                        <label htmlFor="mobile" className="form-label text-primaryy">
                                             Mobile Number
                                         </label>
                                         <input
@@ -98,7 +97,7 @@ const BookAppointment = () => {
                                         />
                                     </div>
                                     <div className="mb-4">
-                                        <label htmlFor="date" className="form-label text-primary">
+                                        <label htmlFor="date" className="form-label text-primaryy">
                                             Appointment Date
                                         </label>
                                         <input
@@ -112,7 +111,7 @@ const BookAppointment = () => {
                                             max={formatDate(maxDate)}
                                         />
                                     </div>
-                                    <button type="submit" className="btn btn-primary w-100">
+                                    <button type="submit" className="btn btn-primaryy w-100">
                                         Confirm Appointment
                                     </button>
                                 </form>
@@ -123,10 +122,12 @@ const BookAppointment = () => {
             </section>
 
 
-            <footer className="text-center py-4 text-muted">
+
+
+            <footer className="text-center  text-muted">
                 © 2024 ClinicName. All rights reserved.
             </footer>
-        </div>
+        </div >
     );
 };
 

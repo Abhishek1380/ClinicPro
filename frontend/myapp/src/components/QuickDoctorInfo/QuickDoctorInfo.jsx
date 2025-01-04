@@ -1,41 +1,37 @@
-import React from 'react';
-import './QuickDoctorInfo.css';
+import React from "react";
+import "./QuickDoctorInfo.css";
 
 const QuickDoctorInfo = () => {
     return (
-        <>
-            <div className="widthFull" style={{ width: "100%", height: "auto" }}>
-                <div className="container myy-5">
-                    <div className="doctor-section">
-
-                        <div className="doctor-info">
-                            <img src="https://i.ibb.co/thbYYBk/doccccc.jpg" alt="doccccc" border="0" />
-                            <h3 className="mt-3">Dr. Satish Nichit </h3>
-                            <p>
-                                Renowned homeopathy specialist with years of experience in treating
-                                chronic and acute conditions effectively.
-                            </p>
-                            <button className="btn btn-outline-success my-2 my-sm-0">Book Appointment</button>
-                        </div>
-
-                        <div className="appointment-box">
-                            <h5>Book a Clinic Appointment</h5>
-                            <p>Next Available at 10:30 AM, Tomorrow</p>
-                            <p>
-                                Sadanand Plaza, Wakad Road, Thergaon, near Khiwsera Trade Centre,
-                                Mangal Nagar, Pune, Maharashtra - 411033
-                            </p>
-
-                            <div className="appointment-box_button">
-                                <button className="btn btn-outline-success my-2 my-sm-0">Book Clinic Visit</button>
-                                <button className="btn btn-outline-success my-2 my-sm-0">No Booking Fee</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <header className="header_container curved-border">
+            <div className="header_content">
+                <h1>
+                    Welcome to Natural Healing
+                </h1>
+                <p>
+                    Experience holistic health with our carefully curated homeopathy remedies. Nature has the power to heal—let
+                    us guide you! Experience holistic health with our carefully curated homeopathy remedies. Nature has the power
+                    to heal—let us guide you!
+                </p>
+                <button className="learn_more">Discover More</button>
             </div>
-        </>
-    )
-}
+            {/* <div className="header_image">
+                <div className="header_image_card header_image_card-1">
+                    <span>Remedies</span>
+                </div>
+                <div className="header_image_card header_image_card-2">
+                    <span>Consultations</span>
+                </div>
+                <div className="header_image_card header_image_card-3">
+                    <span>Care Packages</span>
+                </div>
+                <div className="image_container">
+                    <img src="https://i.ibb.co/zFBNYFX/hiii.jpg" alt="Remedies" className="kk_image" />
+                    <img src="naruto.png" alt="Naruto" className="naruto_image" />
+                </div>
+            </div> */}
+        </header>
+    );
+};
 
 export default QuickDoctorInfo;

@@ -33,7 +33,8 @@ body {
 
 .Blogs_container {
     width: 90%;
-    margin: auto;
+    margin: 60px auto;
+
 }
 
 .Blogs_div {
@@ -41,6 +42,8 @@ body {
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
 }
 
 .Blogs_card {
@@ -51,6 +54,16 @@ body {
     padding: 1.5rem;
     overflow: hidden;
     position: relative;
+
+    border: 2px solid grey;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .Blogs_card-img-holder {
@@ -65,7 +78,11 @@ body {
     max-height: 15rem;
     object-fit: cover;
     border-radius: 1.5rem;
+
+
 }
+
+
 
 .Blogs_blog-title {
     color: #22215B;
@@ -104,4 +121,15 @@ body {
     background: #EEF7FE;
     color: #22215B;
     cursor: pointer;
+}
+
+img {
+    width: 100%;
+    margin: 5% auto;
+    border-radius: 28px;
+}
+
+.Blogs_card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }

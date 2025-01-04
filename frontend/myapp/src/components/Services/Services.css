@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-
 @import url('https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css');
 
 :root {
@@ -13,17 +12,29 @@
     --max-width: 1200px;
 }
 
+.section_container {
+    width: 90%;
+    margin: auto;
+    justify-content: none;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 .service_header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
-
-}
-
-.section_container {
-    width: 90%;
-    margin: auto;
 }
 
 .service_header_content p {
@@ -45,8 +56,9 @@
 }
 
 .service_btn:hover {
-    color: var(-white);
+    color: var(--white);
     background-color: var(--primary-color);
+    transform: scale(1.05);
 }
 
 .service_grid {
@@ -62,7 +74,12 @@
     border-radius: 10px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
     cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+.service_card:hover {
+    transform: translateY(-10px);
+    box-shadow: 5px 15px 25px rgba(0, 0, 0, 0.15);
 }
 
 .service_card span {
@@ -73,24 +90,30 @@
     color: var(--primary-color);
     background-color: var(--primary-color-light);
     border-radius: 100%;
-    transition: 0.3;
+    transition: 0.3s;
+}
+
+.service_card span:hover {
+    color: var(--white);
+    background-color: var(--primary-color-dark);
 }
 
 .service_card h4 {
-    mask-border: .5rem;
     font-size: 1.2rem;
     font-weight: 600;
     color: var(--text-dark);
-
+    transition: color 0.3s ease;
 }
 
 .service_card p {
     margin-bottom: 1rem;
     color: var(--text-light);
+    transition: color 0.3s ease;
 }
 
 .service_card a {
     color: var(--primary-color);
+    transition: color 0.3s ease;
 }
 
 .service_card a:hover {
@@ -102,21 +125,24 @@
     background-color: var(--primary-color);
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width: 1000px) {
     .service_grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media screen and (max-width:650px) {
+@media screen and (max-width: 650px) {
     .service_grid {
         grid-template-columns: repeat(1, 1fr);
     }
-}
 
-@media screen and (max-width:650px) {
     .service_header {
         flex-direction: column;
-        justify-content: cen;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .service_btn {
+        margin-top: 1rem;
     }
 }
