@@ -10,13 +10,13 @@ import Blogs from '../components/Blogs/Blogs';
 import BlogsDetail from '../components/Blogs/BlogsDetail';
 import TreatmentDetails from '../components/Treatments/TreatmentDetails';
 import Review from '../components/Review/Review';
-// import Navbar1 from '../components/Navbar1/Navbar1';
-// import './HomePage.css';
+
+
 import Videos from '../components/Videos/Videos';
 import BookAppointment from '../components/BookAppointment/BookAppointment';
 import Services from '../components/Services/Services';
 import Why from '../components/Why/Why';
-import HomeAboutMe from '../components/HomeAboutMe/HomeAboutMe';
+
 
 
 
@@ -29,7 +29,7 @@ const HomePage = () => {
             <QuickDoctorInfo />
             <Services />
             <Why />
-            {/* <HomeAboutMe /> */}
+
             <MapAndTimings />
             <div className="text-center" style={{ margin: "50px auto" }}>
                 <h3>Reviews</h3>
