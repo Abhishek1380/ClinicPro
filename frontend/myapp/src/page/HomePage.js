@@ -16,6 +16,7 @@ import Videos from '../components/Videos/Videos';
 import BookAppointment from '../components/BookAppointment/BookAppointment';
 import Services from '../components/Services/Services';
 import Why from '../components/Why/Why';
+import MockFAQ from '../components/MockFAQ/MockFAQ';
 // import SampleFAQ from '../components/SampleFAQ/sampleFAQ';
 
 
@@ -38,6 +39,8 @@ const HomePage = () => {
                 <Review />
             </div>
             <Videos />
+            <MockFAQ />
+
 
 
 

@@ -19,27 +19,6 @@ const Blogs = () => {
 
     return (
         <>
-            {/* <div className="Blog_div">
-                <div className="Blog_container">
-                    {blogs.length > 0 ? (
-                        blogs.map((item) => (
-                            <Link to={`/blogs/${item.treatment_box}`} key={item.treatment_box}>
-                                <div className="Blog_main_box">
-                                    <div className="Blog_box">
-                                        <div className="Blog_img_div">
-                                            <img src={item.img_jpg} alt={item.title} />
-                                        </div>
-                                        <h3 style={{ textDecoration: "none", color: 'inherit' }}>{item.title}</h3>
-                                        <p>{item.motivation}</p>
-                                    </div>
-                                </div>
-                            </Link>
-                        ))
-                    ) : (
-                        <p>Loading treatments...</p>
-                    )}
-                </div>
-            </div> */}
             <div className="Blogs_container">
                 <div className="Blogs_div">
                     <div className="Blogs_card">

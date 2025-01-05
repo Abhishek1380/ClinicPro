@@ -11,6 +11,7 @@ import AboutMePage from './page/AboutMePage';
 import HealthBlogPage from './page/HealthBlogPage';
 import AppointmentPage from './page/AppointmentPage';
 import BlogsDetail from './components/Blogs/BlogsDetail';
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 
 
 
@@ -19,6 +20,7 @@ const Routing = () => {
 
         <>
             <Router>
+                <ScrollToTop />
                 <Navbar />
                 <div className="main_component">
                     <Routes>

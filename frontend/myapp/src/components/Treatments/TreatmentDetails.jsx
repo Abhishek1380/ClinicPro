@@ -15,6 +15,7 @@ const TreatmentDetails = () => {
     const { id } = useParams();
     const [treatments, setTreatments] = useState([]);
 
+
     useEffect(() => {
 
         axios.get(`https://backend-clinic-website.onrender.com/treatments/${id}`)

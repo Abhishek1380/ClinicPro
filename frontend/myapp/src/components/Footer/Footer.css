@@ -39,10 +39,21 @@ li {
 .footer-section a {
     color: #fff;
     text-decoration: none;
+
 }
 
 .footer-section a:hover {
-    text-decoration: underline;
+
+    text-decoration: underline !important;
+    /* text-decoration-color: #007bff; */
+    /* Custom underline color */
+    text-decoration-thickness: 5px;
+    /* Thicker underline */
+    text-decoration-style: dashed;
+    /* Dashed underline */
+    /* color: #007bff; */
+    /* Changes text color */
+
 }
 
 .footer-section.contact p {

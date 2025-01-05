@@ -1,135 +1,163 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
-
-* {
-    margin: 0;
-    border: 0;
-    padding: 0;
-    outline: 0;
-    font-family: 'Rubik', sans-serif;
-}
-
-
-@media screen and (max-width: 768px) {
-    html {
-        font-size: 15px
-    }
-}
-
-@media screen and (max-width: 465px) {
-    html {
-        font-size: 14px
-    }
-}
-
-body {
-    width: 100vw;
-    height: 100vh;
-    /* display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem; */
-    background: #f1f3f6;
-}
-
+/* General Styles */
 .Blogs_container {
-    width: 90%;
-    margin: 60px auto;
-
+    padding: 2rem;
+    background-color: #f9f9f9;
 }
 
 .Blogs_div {
-    width: 97%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .Blogs_card {
-    width: 25rem;
-    height: auto;
-    background: #fff;
-    border-radius: 1.5rem;
-    padding: 1.5rem;
+    position: relative;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
     overflow: hidden;
-    position: relative;
-
-    border: 2px solid grey;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
-
+    width: calc(33.33% - 1rem);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
 }
 
-.card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+.Blogs_card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.Blogs_card-img-holder {
+.Blogscard-img-holder img {
     width: 100%;
     height: auto;
-    position: relative;
-}
-
-.Blogs_card-img-holder img {
-    width: 100%;
-    height: auto;
-    max-height: 15rem;
     object-fit: cover;
-    border-radius: 1.5rem;
-
-
 }
-
-
 
 .Blogs_blog-title {
-    color: #22215B;
-    padding: 1rem 0;
-    font-size: 1.5rem;
-}
-
-.Blogs_description {
-    padding: 1rem 0;
-    color: #22215B80;
-    font-size: 1rem;
+    margin: 1rem;
+    font-size: 1.25rem;
+    color: #333;
 }
 
 .Blogs_blog-time {
-    font-size: .8rem;
-    color: #22215B;
+    margin: 0 1rem;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.Blogs_description {
+    margin: 1rem;
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.5;
 }
 
 .Blogs_options {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    font-size: 1rem;
-}
-
-.Blogs_options span {
-    font-weight: 600;
-    color: #22215B;
+    align-items: center;
+    margin: 1rem;
 }
 
 .Blogs_btn {
-    font-size: 1rem;
-    padding: .5rem 1rem;
-    border-radius: .5rem;
-    font-weight: 400;
-    background: #EEF7FE;
-    color: #22215B;
+    background-color: #009f24;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-img {
+.Blogs_btn:hover {
+    background-color: #00791a;
+}
+
+/* Sliding Effect */
+.Blogs_card {
+    transform: translateX(0);
+    border-radius: 31px;
+    margin-top: 60px;
+}
+
+.Blogs_card:nth-child(odd) {
+    animation: slide-in-left 1s ease forwards;
+}
+
+.Blogs_card:nth-child(even) {
+    animation: slide-in-right 1s ease forwards;
+}
+
+@keyframes slide-in-left {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-in-right {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 960px) {
+    .Blogs_card {
+        width: calc(50% - 1rem);
+    }
+}
+
+@media (max-width: 600px) {
+    .Blogs_card {
+        width: 100%;
+    }
+
+    .Blogs_description {
+        font-size: 0.9rem;
+    }
+
+    .Blogs_blog-title {
+        font-size: 1.1rem;
+    }
+}
+
+
+
+/* Keyframe for zoom-in effect */
+@keyframes zoomIn {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+/* Image container with slide-in and zoom effect */
+.Blogscard-img-holder {
+    overflow: hidden;
+    /* Ensures the zoom doesn't go outside the image container */
+    border-radius: 8px;
+    /* Optional for a polished look */
+}
+
+.Blogscard-img-holder img {
     width: 100%;
-    margin: 5% auto;
-    border-radius: 28px;
+    height: auto;
+    transition: transform 0.5s ease;
+    /* Smooth transition for hover */
 }
 
-.Blogs_card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+/* Zoom-in effect on hover */
+.Blogscard-img-holder:hover img {
+    animation: zoomIn 0.5s ease forwards;
 }

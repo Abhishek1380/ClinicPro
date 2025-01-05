@@ -12,3 +12,19 @@
         }
     }
 }
+
+
+@media (max-width:500px) {
+
+    .Article_container {
+        width: 80%;
+        margin: 15% auto;
+    }
+
+    img {
+        margin: 10px auto;
+        width: 100%;
+    }
+
+
+}

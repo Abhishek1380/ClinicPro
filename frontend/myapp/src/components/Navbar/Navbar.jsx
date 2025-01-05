@@ -30,9 +30,9 @@ const Navbar = () => {
 
     return (
         <div className="navbar">
-            <nav className="navbar fixed-top" style={{ padding: "0 20px" }}>
+            <nav className="navbar fixed-top" style={{ padding: "10 20px" }}>
                 <div className="logo">
-                    <img src="https://i.ibb.co/PYYY8XT/Kshitij-removebg-preview.png" alt="" />
+                    <img src="https://i.ibb.co/kDFGgD7/San.png" alt="" />
                 </div>
                 <ul className={`nav-links ${isMenuActive ? 'active' : ''}`}>
                     <li>
