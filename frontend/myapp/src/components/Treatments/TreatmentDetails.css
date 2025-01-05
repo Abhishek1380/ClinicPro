@@ -1,0 +1,14 @@
+@media (max-width:775px) {
+
+    .Article_container {
+
+        margin: 15% auto;
+    }
+
+    img {
+        img {
+            width: 93%;
+            margin: 0 auto;
+        }
+    }
+}

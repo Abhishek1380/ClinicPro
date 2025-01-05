@@ -32,7 +32,7 @@ const Navbar = () => {
                 </ul>
 
                 <div className="controls">
-                    <button className="btn btn-outline-secondary my-2 my-sm-0" type="button" onClick={toggleDarkMode}>
+                    <button className="btn btn-outline-secondary my-2 my-sm-0 disabled" type="button" onClick={toggleDarkMode}>
                         {darkMode ? 'Light Mode' : 'Dark Mode'}
                     </button>
                     <div className="hamburger" onClick={toggleMenu}>

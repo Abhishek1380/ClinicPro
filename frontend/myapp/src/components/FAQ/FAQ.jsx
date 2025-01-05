@@ -6,7 +6,7 @@ const FAQ = () => {
     const [faqList, setFaqList] = useState([]);
 
     useEffect(() => {
-        axios.get('https://backend-clinic-website.onrender.com/FAQ1')
+        axios.get('http://localhost:5000/FAQ1')
             .then(response => {
                 setFaqList(response.data);
             })
