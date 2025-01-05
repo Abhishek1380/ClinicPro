@@ -78,6 +78,11 @@ body.dark-mode .navbar {
     border-radius: 4px;
 }
 
+.navbar img {
+    margin: 0 auto;
+    width: 43%;
+}
+
 .hamburger {
     display: none;
     flex-direction: column;
@@ -148,6 +153,13 @@ body.dark-mode .toggle-mode-btn {
 
     .hamburger {
         display: flex;
+    }
+}
+
+@media (max-width:800px) {
+    .navbar img {
+        margin: 0 2%;
+        width: 37%;
     }
 }
 

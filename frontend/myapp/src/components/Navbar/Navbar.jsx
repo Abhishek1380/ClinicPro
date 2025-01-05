@@ -33,10 +33,9 @@ const Navbar = () => {
 
     return (
         <div className="navbar">
-            <nav className="navbar fixed-top">
+            <nav className="navbar fixed-top" style={{ padding: "0 20px" }}>
                 <div className="logo">
-                    <div className="circle-logo" style={{ backgroundColor: "rgb(32 148 49);" }}>SN</div>
-                    <span>Dr. Satish Nichit</span>
+                    <img src="https://i.ibb.co/PYYY8XT/Kshitij-removebg-preview.png" alt="" />
                 </div>
                 <ul className={`nav-links ${isMenuActive ? 'active' : ''}`}>
                     <li>
@@ -93,9 +92,9 @@ const Navbar = () => {
                 </ul>
 
                 <div className="controls">
-                    <button className="btn btn-outline-secondary my-2 my-sm-0 disabled" type="button" onClick={toggleDarkMode}>
+                    {/* <button className="btn btn-outline-secondary my-2 my-sm-0 disabled" type="button" onClick={toggleDarkMode}>
                         {darkMode ? 'Light Mode' : 'Dark Mode'}
-                    </button>
+                    </button> */}
                     <div className="hamburger" onClick={toggleMenu}>
                         <span></span>
                         <span></span>
