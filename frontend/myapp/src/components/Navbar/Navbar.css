@@ -150,3 +150,20 @@ body.dark-mode .toggle-mode-btn {
         display: flex;
     }
 }
+
+/* Active Link Border */
+.nav-links .active {
+    border-bottom: 5px solid #009f24;
+    /* Green border for active link */
+}
+
+/* Hover effect for links */
+.nav-links a:hover {
+    border-radius: 4px;
+    border-bottom: 5px solid #009f24;
+}
+
+/* Styles for Dark Mode */
+body.dark-mode .font-color {
+    color: #f5f5f5;
+}
