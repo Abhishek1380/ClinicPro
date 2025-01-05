@@ -22,21 +22,21 @@ const Footer = () => {
                         <li><Link to="/aboutme">About Me</Link></li>
                         <li><Link to="/blogs">Health Blog</Link></li>
                         <li><Link to="/treatment">Treatments</Link></li>
-                        <li><Link to="#privacy-policy">Privacy Policy</Link></li>
+                        {/* <li><Link to="#privacy-policy">Privacy Policy</Link></li> */}
                     </ul>
                 </div>
 
                 <div className="footer-section treatments">
                     <h3>Our Treatments :</h3>
                     <ul>
-                        <li>< Link to="#gerd-treatment">GERD Homeopathy Treatment</Link></li>
-                        <li><Link to="#pcos-treatment">Homeopathy for PCOS</Link></li>
-                        <li><Link to="#thyroid-treatment">Homeopathy for Thyroid</Link></li>
-                        <li><Link to="#diabetes-treatment">Homeopathy for Diabetes</Link></li>
-                        <li><Link to="#kidney-stones-treatment">Homeopathy for Kidney Stones</Link></li>
-                        <li><Link to="#high-bp-treatment">Homeopathy for High Blood Pressure</Link></li>
-                        <li><Link to="#asthma-treatment">Homeopathy for Asthma</Link></li>
-                        <li><Link to="#uti-treatment">Homeopathy for UTI</Link></li>
+                        <li>< Link to="/treatment/1">GERD Homeopathy Treatment</Link></li>
+                        <li><Link to="/treatment/2">Homeopathy for PCOS</Link></li>
+                        <li><Link to="/treatment/3">Homeopathy for Thyroid</Link></li>
+                        <li><Link to="/treatment/4">Homeopathy for Diabetes</Link></li>
+                        <li><Link to="/treatment/5">Homeopathy for Kidney Stones</Link></li>
+                        <li><Link to="/treatment/6">Homeopathy for High Blood Pressure</Link></li>
+                        <li><Link to="/treatment/7">Homeopathy for Asthma</Link></li>
+                        <li><Link to="/treatment/8">Homeopathy for UTI</Link></li>
                     </ul>
                 </div>
             </div>

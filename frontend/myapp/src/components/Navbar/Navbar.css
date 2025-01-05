@@ -14,7 +14,7 @@ body.dark-mode .navbar {
     margin: auto;
     padding: auto 5px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 0.5rem 1rem;
     background-color: #f8f8f8;
@@ -162,6 +162,15 @@ body.dark-mode .toggle-mode-btn {
         width: 37%;
     }
 }
+
+@media (max-width:350px) {
+    .logo {
+        display: grid;
+        grid-template-rows: auto;
+        max-width: 224px;
+    }
+}
+
 
 /* Active Link Border */
 .nav-links .active {

@@ -5,31 +5,28 @@ import { Link, useLocation } from 'react-router-dom';
 const Navbar = () => {
     const [darkMode, setDarkMode] = useState(false);
     const [isMenuActive, setIsMenuActive] = useState(false);
-    const [activeLink, setActiveLink] = useState("/"); // Track the active link
-    const location = useLocation(); // Hook to get the current route
+    const [activeLink, setActiveLink] = useState("/");
+    const location = useLocation();
 
-    // Toggle dark mode
     const toggleDarkMode = () => {
         setDarkMode(!darkMode);
         document.body.classList.toggle('dark-mode', !darkMode);
     };
 
-    // Toggle menu state
     const toggleMenu = () => {
         setIsMenuActive(!isMenuActive);
     };
 
-    // Handle active link and close the menu when a link is clicked
     const handleLinkClick = (link) => {
-        setActiveLink(link); // Set the clicked link as active
-        setIsMenuActive(false); // Close the menu after clicking a link (on mobile)
-        window.scrollTo(0, 0); // Ensure content starts from the top after navigating
+        setActiveLink(link);
+        setIsMenuActive(false);
+        window.scrollTo(0, 0);
     };
 
-    // Close the menu when the route changes
+
     useEffect(() => {
-        setIsMenuActive(false); // Close hamburger menu on route change
-    }, [location]); // Trigger when the location changes
+        setIsMenuActive(false);
+    }, [location]);
 
     return (
         <div className="navbar">
@@ -43,7 +40,7 @@ const Navbar = () => {
                             to="/"
                             className={`font-color ${activeLink === '/' ? 'active' : ''}`}
                             onClick={() => handleLinkClick('/')}
-                            key="/" // Ensure re-render on link click
+                            key="/"
                         >
                             Home
                         </Link>
@@ -53,7 +50,7 @@ const Navbar = () => {
                             to="/treatment"
                             className={`font-color ${activeLink === '/treatment' ? 'active' : ''}`}
                             onClick={() => handleLinkClick('/treatment')}
-                            key="/treatment" // Ensure re-render on link click
+                            key="/treatment"
                         >
                             Treatments
                         </Link>
@@ -63,7 +60,7 @@ const Navbar = () => {
                             to="/blogs"
                             className={`font-color ${activeLink === '/blogs' ? 'active' : ''}`}
                             onClick={() => handleLinkClick('/blogs')}
-                            key="/blogs" // Ensure re-render on link click
+                            key="/blogs"
                         >
                             Health Blogs
                         </Link>
@@ -73,7 +70,7 @@ const Navbar = () => {
                             to="/aboutme"
                             className={`font-color ${activeLink === '/aboutme' ? 'active' : ''}`}
                             onClick={() => handleLinkClick('/aboutme')}
-                            key="/aboutme" // Ensure re-render on link click
+                            key="/aboutme"
                         >
                             About Us
                         </Link>
@@ -84,7 +81,7 @@ const Navbar = () => {
                             className={`font-color special_btn btn-outline-success ${activeLink === '/bookappointment' ? 'active' : ''}`}
                             style={{ borderRadius: "7px", backgroundColor: "#0176c4", color: "white", fontWeight: "bold", background: " rgb(32 148 49)" }}
                             onClick={() => handleLinkClick('/bookappointment')}
-                            key="/bookappointment" // Ensure re-render on link click
+                            key="/bookappointment"
                         >
                             Book Appointment
                         </Link>
