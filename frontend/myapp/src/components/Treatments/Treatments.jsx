@@ -8,7 +8,7 @@ const Treatments = () => {
 
     useEffect(() => {
 
-        axios.get('http://localhost:5000/treatments')
+        axios.get('https://backend-clinic-website.onrender.com/treatments')
             .then(response => {
                 setTreatments(response.data);
             })
