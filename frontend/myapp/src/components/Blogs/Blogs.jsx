@@ -20,6 +20,7 @@ const Blogs = () => {
     return (
         <>
             <div className="Blogs_container">
+                <h5 className='text center'><span><i class="ri-hospital-line"></i><i class="ri-arrow-right-s-line"></i></span> Read blogs about Homeopathy</h5>
                 <div className="Blogs_div">
                     <div className="Blogs_card">
                         <div className="Blogscard-img-holder">

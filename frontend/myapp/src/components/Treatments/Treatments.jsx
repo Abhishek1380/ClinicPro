@@ -19,6 +19,7 @@ const Treatments = () => {
 
     return (
         <div className="treatment_div">
+            <h5 className='Page_title text center'><span><i class="ri-hospital-line"></i><i class="ri-arrow-right-s-line"></i></span> Learn about our treatments</h5>
 
             <div className="treatment_container">
 

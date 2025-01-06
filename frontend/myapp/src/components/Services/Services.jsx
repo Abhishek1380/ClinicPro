@@ -15,7 +15,7 @@ const Services = () => {
                         include homeopathic medicines and lifestyle advice tailored to individual needs for gentle,
                         effective healing.</p>
                 </div>
-                <button className="service_btn">Our Services</button>
+                {/* <button className="service_btn">Our Services</button> */}
             </div>
             <div className="service_grid">
                 <div className="service_card">
