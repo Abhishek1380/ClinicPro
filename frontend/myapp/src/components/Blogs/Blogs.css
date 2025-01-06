@@ -137,6 +137,10 @@
     .Blogs_container {
         padding: 16px 0.2rem;
     }
+
+    .Blogs_div {
+        gap: 0;
+    }
 }
 
 /* Keyframe for zoom-in effect */

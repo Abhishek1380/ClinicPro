@@ -16,6 +16,7 @@ body {
     opacity: 0;
     transform: translateY(30px);
     animation: fadeInUp 1s ease-out forwards;
+    margin-bottom: 2rem;
 }
 
 .treatment_container {
@@ -100,7 +101,7 @@ body {
     }
 
     .treatment_box {
-        height: 32vh;
+        height: 29vh;
     }
 
 

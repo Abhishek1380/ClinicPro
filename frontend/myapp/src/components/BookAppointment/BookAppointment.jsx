@@ -45,17 +45,17 @@ const BookAppointment = () => {
                     <div className="row justify-content-center align-items-center" style={{ width: "100%" }}>
                         <div className="col-md-4 mb-4 slide-from-left">
                             <div className="card shadow p-4 contact-sidebar">
-                                <h4 className="text-primaryy">Need Help?</h4>
+                                <h4 className="text-primaryy">Want to know more ?</h4>
                                 <p className="text-muted mb-3">
-                                    Contact us for assistance with your appointment.
+                                    Contact us for assistance for further queries.
                                 </p>
                                 <ul className="list-unstyled">
                                     <li className="mb-2">
                                         <strong className="text-primaryy">Phone:</strong> +91-9403530005
                                     </li>
-                                    <li className="mb-2">
+                                    {/* <li className="mb-2">
                                         <strong className="text-primaryy">Email:</strong> support@clinic.com
-                                    </li>
+                                    </li> */}
                                     <li>
                                         <strong className="text-primaryy">Address:</strong> Shop no 20, Sukhwani Heritage, Chikhali Akurdi Rd, near Bhalerao ENT hospital, panchatara Nagar, Bijali Nagar, Ganga Nagar, Akurdi, Pune, Pimpri-Chinchwad, Maharashtra 411035
                                     </li>
