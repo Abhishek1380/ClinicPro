@@ -1,91 +1,67 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import { Link } from 'react-router-dom';
-import './Blogs.css';
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import { Link } from "react-router-dom";
+import "./Blogs.css";
 
 const Blogs = () => {
     const [blogs, setBlogs] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
 
     useEffect(() => {
-        axios.get('http://localhost:5000/sample')
+        axios.get("https://backend-clinic-website.onrender.com/blogs")
             .then(response => {
                 setBlogs(response.data);
+                setLoading(false);
             })
             .catch(error => {
-                console.error('Error fetching blogs:', error);
-
+                console.error("Error fetching blogs:", error);
+                setError("Failed to load blogs. Please try again later.");
+                setLoading(false);
             });
     }, []);
 
     return (
-        <>
-            <div className="Blogs_container">
-                <h5 className='text center'><span><i class="ri-hospital-line"></i><i class="ri-arrow-right-s-line"></i></span> Read blogs about Homeopathy</h5>
-                <div className="Blogs_div">
-                    <div className="Blogs_card">
-                        <div className="Blogscard-img-holder">
-                            <img src="https://i.ibb.co/tDSSKc9/88888888.jpg" alt="Blog image" />
-                        </div>
-                        <h3 className="Blogs_blog-title">Learn Microinteraction</h3>
-                        <span className="Blogs_blog-time">Monday Jan 20, 2020</span>
-                        <p className="Blogs_description">
-                            Explore the latest trends in homeopathic remedies and natural healing techniques. Learn how nature’s power can restore balance and improve your health.
-                        </p>
-                        <div className="Blogs_options">
-                            <span>
-                                Read Full Blog
-                            </span>
-                            <button className="Blogs_btn">Blog</button>
-                        </div>
-                    </div>
+        <div className="Blogs_container">
+            <h5 className="text center">
+                <span>
+                    <i className="ri-hospital-line"></i>
+                    <i className="ri-arrow-right-s-line"></i>
+                </span>{" "}
+                Read blogs about Homeopathy
+            </h5>
 
-                    <div className="Blogs_card">
-                        <div className="Blogscard-img-holder">
-                            <img src="https://i.ibb.co/fVRWb1s/rrrrrrrrrrr.jpg" alt="Blog image" />
-                        </div>
-                        <h3 className="Blogs_blog-title">Learn Microinteraction</h3>
-                        <span className="Blogs_blog-time">Monday Jan 20, 2020</span>
-                        <p className="Blogs_description">
-                            Discover the benefits of holistic wellness practices, including homeopathy and alternative therapies. Find tips for living a balanced and healthy life naturally.
-                        </p>
-                        <div className="Blogs_options">
-                            <span>
-                                Read Full Blog
-                            </span>
-                            <button className="Blogs_btn">Blog</button>
-                        </div>
-                    </div>
-                    <div className="Blogs_card">
-                        <div className="Blogscard-img-holder">
-                            <img src="https://i.ibb.co/TmtNN2k/rrrrr.jpg" alt="Blog image" />
-                        </div>
-                        <h3 className="Blogs_blog-title">Learn Microinteraction</h3>
-                        <span className="Blogs_blog-time">Monday Jan 20, 2020</span>
-                        <p className="Blogs_description">
-                            Gain insights into effective homeopathic treatments for common ailments. Our blog shares expert advice, remedies, and tips for promoting overall wellness naturally.
-                        </p>
-                        <div className="Blogs_options">
-                            <span>
-                                Read Full Blog
-                            </span>
-                            <button className="Blogs_btn">Blog</button>
-                        </div>
-                    </div>
-
+            {loading && (
+                <div className="spinner-container">
+                    <div className="spinner"></div>
+                    <p>Loading blogs...</p>
                 </div>
+            )}
+
+            {error && <p className="error">{error}</p>}
+
+            <div className="Blogs_div">
+                {blogs.length > 0 ? (
+                    blogs.map((blog) => (
+                        <div key={blog._id} className="Blogs_card">
+                            <div className="Blogscard-img-holder">
+                                <img src={blog.img} alt={blog.title} />
+                            </div>
+                            <h3 className="Blogs_blog-title">{blog.title}</h3>
+                            <span className="Blogs_blog-time">{blog.date}</span>
+                            <p className="Blogs_description">{blog.desc}</p>
+                            <div className="Blogs_options">
+                                <Link to={`/blog/${blog._id}`}>
+                                    <button className="Blogs_btn">Read More</button>
+                                </Link>
+                            </div>
+                        </div>
+                    ))
+                ) : (
+                    !loading && <p>No blogs available.</p>
+                )}
             </div>
-
-
-
-
-
-
-
-
-
-
-        </>
-
+        </div>
     );
 };
 

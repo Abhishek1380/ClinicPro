@@ -45,14 +45,8 @@ li {
 .footer-section a:hover {
 
     text-decoration: underline !important;
-    /* text-decoration-color: #007bff; */
-    /* Custom underline color */
     text-decoration-thickness: 5px;
-    /* Thicker underline */
     text-decoration-style: dashed;
-    /* Dashed underline */
-    /* color: #007bff; */
-    /* Changes text color */
 
 }
 

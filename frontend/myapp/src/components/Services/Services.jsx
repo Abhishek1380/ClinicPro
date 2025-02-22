@@ -15,7 +15,6 @@ const Services = () => {
                         include homeopathic medicines and lifestyle advice tailored to individual needs for gentle,
                         effective healing.</p>
                 </div>
-                {/* <button className="service_btn">Our Services</button> */}
             </div>
             <div className="service_grid">
                 <div className="service_card">
@@ -24,7 +23,7 @@ const Services = () => {
                     <p>Natural treatments to balance emotions, reduce stress, and improve sleep patterns for mental and
                         emotional well-being.
                     </p>
-                    <a href="#">Learn More</a>
+
 
                 </div>
                 <div className="service_card">
@@ -33,7 +32,7 @@ const Services = () => {
                     <p> Holistic solutions to strengthen the immune system, prevent recurrent infections, and support
                         overall health naturally.
                     </p>
-                    <a href="#">Learn More</a>
+
 
                 </div>
                 <div className="service_card">
@@ -42,7 +41,7 @@ const Services = () => {
                     <p> Gentle, personalized homeopathic remedies for allergies, arthritis, and asthma, focusing on
                         long-term relief and overall wellness.
                     </p>
-                    <a href="#">Learn More</a>
+
 
                 </div>
             </div>

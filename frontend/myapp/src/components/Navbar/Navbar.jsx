@@ -24,7 +24,7 @@ const Navbar = () => {
     };
 
     useEffect(() => {
-        setActiveLink(location.pathname); // Ensure the active link matches the current route
+        setActiveLink(location.pathname);
     }, [location]);
 
     return (

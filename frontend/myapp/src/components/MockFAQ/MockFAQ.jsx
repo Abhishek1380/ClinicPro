@@ -7,13 +7,13 @@ const MockFAQ = () => {
     const [activeIndex, setActiveIndex] = useState(null);
     const [error, setError] = useState(null);
 
-    // Fetching data from API
+
     useEffect(() => {
         axios
             .get('https://backend-clinic-website.onrender.com/FAQ1')
             .then(response => {
                 setFaqList(response.data);
-                setError(null); // Reset error on successful fetch
+                setError(null);
             })
             .catch(error => {
                 console.error('Error fetching FAQs:', error);
@@ -21,7 +21,6 @@ const MockFAQ = () => {
             });
     }, []);
 
-    // Toggling answer visibility
     const handleToggle = (index) => {
         setActiveIndex(activeIndex === index ? null : index);
     };

@@ -23,16 +23,12 @@ body.dark-mode .container {
     border: 1px solid #dee2e6;
     margin: 1rem auto;
     border-radius: 8px;
-    /* Optional: rounded corners */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    /* Smooth transition for shadow and transform */
 }
 
 .faq-card:hover {
     transform: none !important;
-    /* Adjust the translate effect */
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.05) !important;
-    /* Enhanced box shadow */
 }
 
 .card-body {

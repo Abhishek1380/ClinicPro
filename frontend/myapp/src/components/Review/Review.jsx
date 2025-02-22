@@ -25,7 +25,7 @@ const GoogleReviews = () => {
                     <button>Read our success stories</button>
                 </div>
                 <div className="container_right">
-                    {/* Dynamic rendering of reviews */}
+
                     {reviews.map(review => (
                         <div className="card" key={review._id}>
                             <img src={review.profile_photo_url} alt={review.author_name} />
@@ -35,7 +35,7 @@ const GoogleReviews = () => {
                                     <span><i className="ri-double-quotes-l"></i></span>
                                     <p>{review.text}</p>
                                     <span><i className="ri-double-quotes-r"></i></span>
-                                    {/* Author Name and Link */}
+
                                     <h4>
                                         <a href={review.author_url} target="_blank" rel="noopener noreferrer">
                                             {review.author_name}

@@ -84,7 +84,7 @@
 }
 
 .detail-item:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -99,6 +99,12 @@
     }
 }
 
+@media (max-width: 450px) {
+    .detail-item:hover {
+        transform: none;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+}
 
 .carousel-item {
     opacity: 0;
@@ -130,4 +136,26 @@
 .carousel-item-next.active .about-me-section:last-child,
 .carousel-item-prev.active .about-me-section:last-child {
     transform: translateX(0);
+}
+
+
+
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(30%);
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 6%;
 }

@@ -1,36 +1,41 @@
 import React from "react";
+import { motion } from "framer-motion";
 import "./QuickDoctorInfo.css";
 
 const QuickDoctorInfo = () => {
     return (
-        <header className="header_container curved-border">
-            <div className="header_content">
-                <h1>
-                    Welcome to Natural Healing
-                </h1>
+        <section className="quick_doctor">
+
+            <div className="doctor_text">
+                <h1>Welcome to <span>Natural Healing</span></h1>
                 <p>
-                    Experience holistic health with our carefully curated homeopathy remedies. Nature has the power to heal—let
-                    us guide you! Experience holistic health with our carefully curated homeopathy remedies. Nature has the power
-                    to heal—let us guide you!
+                    Experience holistic health with our carefully curated homeopathy remedies. Nature has the power to heal—let us guide you!
                 </p>
-                <button className="learn_more">Discover More</button>
+                <motion.button
+                    className="discover_btn"
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                >
+                    Discover More
+                </motion.button>
             </div>
-            {/* <div className="header_image">
-                <div className="header_image_card header_image_card-1">
-                    <span>Remedies</span>
-                </div>
-                <div className="header_image_card header_image_card-2">
-                    <span>Consultations</span>
-                </div>
-                <div className="header_image_card header_image_card-3">
-                    <span>Care Packages</span>
-                </div>
-                <div className="image_container">
-                    <img src="https://i.ibb.co/zFBNYFX/hiii.jpg" alt="Remedies" className="kk_image" />
-                    <img src="naruto.png" alt="Naruto" className="naruto_image" />
-                </div>
-            </div> */}
-        </header>
+
+            <div className="doctor_image_container">
+                <motion.div
+                    className="circular_border"
+                    animate={{ rotate: 360 }}
+                    transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
+                ></motion.div>
+
+                <motion.img
+                    src="https://i.ibb.co/vCkPVpNV/Medicine.jpg"
+                    alt="Doctor"
+                    className="doctor_image"
+                    animate={{ y: [0, -10, 0] }}
+                    transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+                />
+            </div>
+        </section>
     );
 };
 

@@ -1,0 +1,15 @@
+.book-appointment-button {
+    font-size: 19px;
+    padding: 7px 20px;
+    background-color: #ddffd1;
+    color: #12ac8e;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+
+.book-appointment-container {
+    background-color: #ddffd1;
+}

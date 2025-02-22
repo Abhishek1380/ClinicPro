@@ -31,7 +31,7 @@ const BookAppointment = () => {
 
     return (
         <div className="book-appointment ">
-            <section className="hero-section text-center py-5 ">
+            <section className="hero-section text-center py-5 " style={{ marginBottom: "0" }}>
                 <div className="container" style={{ marginTop: "1rem" }}>
                     <h1 className="text-primaryy mb-3">Book Your Appointment</h1>
                     <p className="text-muted">
@@ -124,7 +124,7 @@ const BookAppointment = () => {
 
 
 
-            <footer className="text-center  text-muted">
+            <footer className="text-center  text-muted" style={{ marginBottom: "0" }}>
                 © 2024 ClinicName. All rights reserved.
             </footer>
         </div >

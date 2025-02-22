@@ -164,37 +164,27 @@ body {
 }
 
 
-
-
-/* Profile photo styling */
 .profile-photo {
     width: 60px;
-    /* Set width */
     height: 60px;
-    /* Set height */
     border-radius: 50%;
-    /* Make it circular */
     object-fit: cover;
-    /* Ensure the image covers the area */
     margin-right: 15px;
-    /* Space between image and text */
 }
 
 .card_content {
     display: flex;
     align-items: center;
-    /* Align content vertically */
 }
 
 .card_details {
     flex: 1;
-    /* Ensure text takes up available space */
+
 }
 
 .card_details p {
     margin: 0;
     font-style: italic;
-    /* Style the review text */
 }
 
 .card_details h4 a {
