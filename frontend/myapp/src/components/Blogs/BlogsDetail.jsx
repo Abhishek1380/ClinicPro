@@ -11,7 +11,7 @@ const BlogsDetail = () => {
     const { id } = useParams();
 
     useEffect(() => {
-        axios.get(`http://localhost:5000/sample/${id}`)
+        axios.get(`https://backend-clinic-website.onrender.com/blogs/${id}`)
             .then(response => {
                 setBlogs(response.data);
                 console.log(response.data);
