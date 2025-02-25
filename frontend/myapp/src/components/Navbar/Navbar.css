@@ -174,13 +174,26 @@ body.dark-mode .toggle-mode-btn {
     }
 
     .logo img {
-        max-width: 100px;
+        max-width: 122px;
         margin-left: 0;
     }
 
     .logo {
         padding-left: 0;
     }
+
+    .treatment_main_box {
+        padding: 8px;
+    }
+
+    .treatment_box h3 {
+        font-size: 1.2rem !important;
+    }
+
+    .treatment_box p {
+        font-size: 1rem !important;
+    }
+
 }
 
 .hamburger.active span:nth-child(1) {

@@ -64,7 +64,7 @@ const BookAppointment = () => {
                         </div>
 
                         <div className="col-md-6 slide-from-right">
-                            <div className="card shadow-lg p-4">
+                            <div className="card shadow-lg p-4" >
                                 <h2 className="text-center text-primaryy mb-4">Appointment Form</h2>
                                 <form onSubmit={handleSubmit}>
                                     <div className="mb-4">

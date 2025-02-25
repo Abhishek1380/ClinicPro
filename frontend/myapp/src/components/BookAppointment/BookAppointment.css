@@ -19,7 +19,7 @@ body {
 }
 
 .form-section {
-    background-color: #ffffff;
+    background-color: #f0fff9;
 }
 
 .card {
@@ -71,6 +71,7 @@ footer {
     transform: translateX(100%);
     animation: slideInRight 1s forwards;
 }
+
 
 @keyframes slideInLeft {
     to {

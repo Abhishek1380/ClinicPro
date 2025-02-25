@@ -3,8 +3,8 @@ import './AboutMe.css';
 
 const AboutMe = () => {
     return (
-        <div className="container my-5">
-            <h5 className='Page_title text center'><span><i class="ri-hospital-line"></i><i class="ri-arrow-right-s-line"></i></span> About us</h5>
+        <div className="container my-6">
+            <h5 className='Page_title text center m' style={{ marginLeft: "-52%" }}><span><i class="ri-hospital-line"></i><i class="ri-arrow-right-s-line"></i></span> About us</h5>
             <div id="aboutMeCarousel" className="carousel slide" data-bs-ride="carousel">
 
                 <div className="carousel-indicators">
