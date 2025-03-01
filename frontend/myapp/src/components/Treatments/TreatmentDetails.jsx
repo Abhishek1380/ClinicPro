@@ -32,14 +32,14 @@ const TreatmentDetails = () => {
     }, [id]);
 
     return (
-        <div className="Article_container">
+        <div className="Article_container" >
             {treatments.length > 0 ? (
                 treatments.map((item) => (
                     <div className="Article_div" key={item.t_id}>
                         <h2 className="Article_title text-center">{item.title}</h2>
                         <p className="Article_date">{/*{item.date}*/} 22nd Oct 2024</p>
-                        <div className="Article_img">
-                            <img src={item.img} alt={item.title} />
+                        <div className="Article_img" >
+                            <img src={item.img} alt={item.title} style={{ borderRadius: "30px" }} />
                         </div>
                         <p className="Article_description">{item.desc1}</p>
                         <p className="Article_description">{item.desc2}</p>
