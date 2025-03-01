@@ -41,7 +41,7 @@ const BookAppointment = () => {
             </section >
 
             <section className="form-section py-5">
-                <div className="container">
+                <div className="container containerr">
                     <div className="row justify-content-center align-items-center" style={{ width: "100%" }}>
                         <div className="col-md-4 mb-4 slide-from-left">
                             <div className="card shadow p-4 contact-sidebar">
