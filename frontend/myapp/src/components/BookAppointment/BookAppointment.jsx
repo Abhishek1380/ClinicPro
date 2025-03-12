@@ -63,59 +63,60 @@ const BookAppointment = () => {
                             </div>
                         </div>
 
-                        <div className="col-md-6 slide-from-right">
-                            <div className="card shadow-lg p-4" >
-                                <h2 className="text-center text-primaryy mb-4">Appointment Form</h2>
-                                <form onSubmit={handleSubmit}>
-                                    <div className="mb-4">
-                                        <label htmlFor="name" className="form-label text-primaryy">
-                                            Full Name
-                                        </label>
-                                        <input
-                                            type="text"
-                                            className="form-control"
-                                            id="name"
-                                            placeholder="Enter your full name"
-                                            value={name}
-                                            onChange={(e) => setName(e.target.value)}
-                                            required
-                                        />
-                                    </div>
-                                    <div className="mb-4">
-                                        <label htmlFor="mobile" className="form-label text-primaryy">
-                                            Mobile Number
-                                        </label>
-                                        <input
-                                            type="tel"
-                                            className="form-control"
-                                            id="mobile"
-                                            placeholder="Enter your 10-digit mobile number"
-                                            value={mobile}
-                                            onChange={(e) => setMobile(e.target.value)}
-                                            required
-                                            pattern="[0-9]{10}"
-                                        />
-                                    </div>
-                                    <div className="mb-4">
-                                        <label htmlFor="date" className="form-label text-primaryy">
-                                            Appointment Date
-                                        </label>
-                                        <input
-                                            type="date"
-                                            className="form-control"
-                                            id="date"
-                                            value={date}
-                                            onChange={(e) => setDate(e.target.value)}
-                                            required
-                                            min={formatDate(today)}
-                                            max={formatDate(maxDate)}
-                                        />
-                                    </div>
-                                    <button type="submit" className="btn btn-primaryy w-100">
-                                        Confirm Appointment
-                                    </button>
-                                </form>
-                            </div>
+
+                    </div>
+                    <div className="col-md-6 slide-from-right">
+                        <div className="card shadow-lg p-4" >
+                            <h2 className="text-center text-primaryy mb-4">Appointment Form</h2>
+                            <form onSubmit={handleSubmit}>
+                                <div className="mb-4">
+                                    <label htmlFor="name" className="form-label text-primaryy">
+                                        Full Name
+                                    </label>
+                                    <input
+                                        type="text"
+                                        className="form-control"
+                                        id="name"
+                                        placeholder="Enter your full name"
+                                        value={name}
+                                        onChange={(e) => setName(e.target.value)}
+                                        required
+                                    />
+                                </div>
+                                <div className="mb-4">
+                                    <label htmlFor="mobile" className="form-label text-primaryy">
+                                        Mobile Number
+                                    </label>
+                                    <input
+                                        type="tel"
+                                        className="form-control"
+                                        id="mobile"
+                                        placeholder="Enter your 10-digit mobile number"
+                                        value={mobile}
+                                        onChange={(e) => setMobile(e.target.value)}
+                                        required
+                                        pattern="[0-9]{10}"
+                                    />
+                                </div>
+                                <div className="mb-4">
+                                    <label htmlFor="date" className="form-label text-primaryy">
+                                        Appointment Date
+                                    </label>
+                                    <input
+                                        type="date"
+                                        className="form-control"
+                                        id="date"
+                                        value={date}
+                                        onChange={(e) => setDate(e.target.value)}
+                                        required
+                                        min={formatDate(today)}
+                                        max={formatDate(maxDate)}
+                                    />
+                                </div>
+                                <button type="submit" className="btn btn-primaryy w-100">
+                                    Confirm Appointment
+                                </button>
+                            </form>
                         </div>
                     </div>
                 </div>
