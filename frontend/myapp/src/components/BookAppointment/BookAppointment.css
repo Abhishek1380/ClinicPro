@@ -117,7 +117,7 @@ body {
     .container-xxl {
         --bs-gutter-x: 1.5rem;
         --bs-gutter-y: 0;
-        width: 111% !important;
+        width: 105% !important;
         padding-right: calc(var(--bs-gutter-x)* .5);
         padding-left: calc(var(--bs-gutter-x)* .5);
         margin-right: auto;

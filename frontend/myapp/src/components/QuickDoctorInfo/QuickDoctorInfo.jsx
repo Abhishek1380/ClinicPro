@@ -1,8 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./QuickDoctorInfo.css";
+import { useNavigate } from "react-router-dom";
 
 const QuickDoctorInfo = () => {
+
+    const navigate = useNavigate();
     return (
         <section className="quick_doctor">
 
@@ -15,6 +18,7 @@ const QuickDoctorInfo = () => {
                     className="discover_btn"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
+                    onClick={() => navigate("/aboutme")}
                 >
                     Discover More
                 </motion.button>

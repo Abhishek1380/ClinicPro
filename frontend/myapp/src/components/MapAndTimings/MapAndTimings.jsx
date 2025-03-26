@@ -11,7 +11,7 @@ const MapAndTimings = () => {
     };
 
     const handleCallClinic = () => {
-        window.location.href = "tel:+919876543210";
+        window.location.href = "tel:+919403530005";
     };
 
     return (
@@ -45,27 +45,27 @@ const MapAndTimings = () => {
                 <div className="opd-hours__schedule">
                     <div className="opd-hours__day">
                         <span className="day-name">Monday:</span>
-                        <span className="day-hours">10:30 AM - 2:00 PM | 5:00 PM - 9:00 PM</span>
+                        <span className="day-hours">10:00 AM - 1:00 PM | 5:30 PM - 9:00 PM</span>
                     </div>
                     <div className="opd-hours__day">
                         <span className="day-name">Tuesday:</span>
-                        <span className="day-hours">10:30 AM - 2:00 PM | 5:00 PM - 9:00 PM</span>
+                        <span className="day-hours">10:00 AM - 1:00 PM | 5:30 PM - 9:00 PM</span>
                     </div>
                     <div className="opd-hours__day">
                         <span className="day-name">Wednesday:</span>
-                        <span className="day-hours">10:30 AM - 2:00 PM | 5:00 PM - 9:00 PM</span>
+                        <span className="day-hours">10:00 AM - 1:00 PM | 5:30 PM - 9:00 PM</span>
                     </div>
                     <div className="opd-hours__day">
                         <span className="day-name">Thursday:</span>
-                        <span className="day-hours">10:30 AM - 2:00 PM | 5:00 PM - 9:00 PM</span>
+                        <span className="day-hours">10:00 AM - 1:00 PM | 5:30 PM - 9:00 PM</span>
                     </div>
                     <div className="opd-hours__day">
                         <span className="day-name">Friday:</span>
-                        <span className="day-hours">10:30 AM - 2:00 PM | 5:00 PM - 9:00 PM</span>
+                        <span className="day-hours">10:00 AM - 1:00 PM | 5:30 PM - 9:00 PM</span>
                     </div>
                     <div className="opd-hours__day">
                         <span className="day-name">Saturday:</span>
-                        <span className="day-hours">10:30 AM - 2:00 PM | 5:00 PM - 9:00 PM</span>
+                        <span className="day-hours">10:00 AM - 1:00 PM | 5:30 PM - 9:00 PM</span>
                     </div>
                     <div className="opd-hours__day">
                         <span className="day-name">Sunday:</span>

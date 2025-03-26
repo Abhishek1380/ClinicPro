@@ -8,7 +8,7 @@ const Why = () => {
     return (
         <section class="section_container why_container">
             <div class="why_image">
-                <img src="https://i.ibb.co/7tYtvnQd/doctor.jpg" alt="beautiful-young-female-doctor-looking-camera-office-1301-7807" border="0" />
+                <img src="https://i.ibb.co/thbYYBk/doccccc.jpg" alt="beautiful-young-female-doctor-looking-camera-office-1301-7807" border="0" />
             </div>
             <div class="why_flex">
                 <div class="why_content">

@@ -51,7 +51,7 @@ const Blogs = () => {
                             <span className="Blogs_blog-time">{blog.date}</span>
                             <p className="Blogs_description">{blog.desc}</p>
                             <div className="Blogs_options">
-                                <Link to={`/blog/${blog._id}`}>
+                                <Link to={`/blog/${blog.rank}`}>
                                     <button className="Blogs_btn">Read More</button>
                                 </Link>
                             </div>
