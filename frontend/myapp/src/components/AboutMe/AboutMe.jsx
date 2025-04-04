@@ -39,7 +39,7 @@ const AboutMe = () => {
                             <div className="doctor-details">
                                 <div className="detail-item mb-4">
                                     <h4 className="text-primaryy">Name</h4>
-                                    <p>Dr. Sachin Nichit, MD Homeopathy.</p>
+                                    <p>Dr. Satish Nichit, MD Homeopathy.</p>
                                 </div>
                                 <div className="detail-item mb-4">
                                     <h4 className="text-primaryy">Biography</h4>
