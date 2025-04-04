@@ -39,7 +39,7 @@ const AboutMe = () => {
                             <div className="doctor-details">
                                 <div className="detail-item mb-4">
                                     <h4 className="text-primaryy">Name</h4>
-                                    <p>Dr. Sachin Nichit, MD Homeopathy, Fellowship in Advanced Homeopathy</p>
+                                    <p>Dr. Sachin Nichit, MD Homeopathy.</p>
                                 </div>
                                 <div className="detail-item mb-4">
                                     <h4 className="text-primaryy">Biography</h4>
@@ -76,7 +76,7 @@ const AboutMe = () => {
                             <div className="doctor-details">
                                 <div className="detail-item mb-4">
                                     <h4 className="text-primaryy">Name</h4>
-                                    <p>Dr. Sachin Nichit, MD Homeopath, Fellowship in Advanced Homeopathy, PGDEMS</p>
+                                    <p>Dr. Satish Nichit, MD Homeopathy.</p>
                                 </div>
                                 <div className="detail-item mb-4">
                                     <h4 className="text-primaryy">Biography</h4>
@@ -89,13 +89,13 @@ const AboutMe = () => {
                                     <h4 className="text-primaryy">Education</h4>
                                     <p>
                                         MD Homeopathy<br />
-                                        Fellowship Course in Advanced Homeopathy and PGDEMS from Ruby Hall Pune<br />
-                                        BHMS
+                                        <br />
+                                       
                                     </p>
                                 </div>
                                 <div className="detail-item">
                                     <h4 className="text-primaryy">Experience</h4>
-                                    <p>13+ years</p>
+                                    <p>14+ years</p>
                                 </div>
                             </div>
                         </div>
