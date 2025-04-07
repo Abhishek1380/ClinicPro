@@ -11,7 +11,7 @@ const MapAndTimings = () => {
     };
 
     const handleCallClinic = () => {
-        window.location.href = "tel:+919403530005";
+        window.location.href = "tel:+919766830294";
     };
 
     return (
