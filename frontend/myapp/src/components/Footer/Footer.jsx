@@ -8,7 +8,7 @@ const Footer = () => {
             <div className="footer-container">
                 <div className="footer-section contact">
                     <h3>Contact Us :</h3>
-                    <p> <i class="fa-solid fa-phone" style={{ paddingRight: "auto 5px" }}></i> Phone: <a href="tel:+919403530005">9403530005</a></p>
+                    <p> <i class="fa-solid fa-phone" style={{ paddingRight: "auto 5px" }}></i> Phone: <a href="tel:+919403530005">9766830294</a></p>
                     <p>Address: Shop no 20, Sukhwani Heritage, Chikhali Akurdi Rd, near Bhalerao ENT hospital, panchatara Nagar, Bijali Nagar, Ganga Nagar, Akurdi, Pune, Pimpri-Chinchwad, Maharashtra 411035</p>
                     <div className="social-links">
                         <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"> <i class="fa-brands fa-instagram"></i> Instagram</a>
