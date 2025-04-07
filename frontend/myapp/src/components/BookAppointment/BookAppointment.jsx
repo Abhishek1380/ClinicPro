@@ -51,7 +51,7 @@ const BookAppointment = () => {
                                 </p>
                                 <ul className="list-unstyled">
                                     <li className="mb-2">
-                                        <strong className="text-primaryy">Phone:</strong> +91-9403530005
+                                        <strong className="text-primaryy">Phone:</strong> +91-9766830294
                                     </li>
                                     {/* <li className="mb-2">
                                         <strong className="text-primaryy">Email:</strong> support@clinic.com
