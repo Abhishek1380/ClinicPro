@@ -76,7 +76,7 @@ body.dark-mode .navbar {
 .controls {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 2px;
 }
 
 .special_btnn {
@@ -118,6 +118,7 @@ body.dark-mode .toggle-mode-btn {
     .nav-links.active {
         max-height: 300px;
         opacity: 1;
+        margin-top: 46px;
     }
 
     .hamburger {
@@ -206,4 +207,86 @@ body.dark-mode .toggle-mode-btn {
 
 .hamburger.active span:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Contact banner styling */
+.contact-banner {
+    position: fixed;
+    top: 54px !important;
+    /* Keep it at the top of the page */
+    left: 0;
+    width: 100%;
+    background-color: #efffee !important;
+    /* Light background */
+    display: flex;
+    justify-content: center;
+    padding: 3px 0;
+    /* backdrop-filter: blur(8px); */
+    /* Optional: Blur effect */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Soft shadow */
+    z-index: 9999;
+    /* Ensure it's on top */
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+}
+
+/* Content inside the banner */
+.contact-content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Phone number and email clickable */
+.contact-link {
+    color: #2a2a2a;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+    color: #007B5E;
+    /* Change color on hover */
+    text-decoration: underline;
+}
+
+.contact-divider {
+    color: #555;
 }

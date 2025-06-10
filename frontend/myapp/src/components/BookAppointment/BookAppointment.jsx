@@ -32,7 +32,7 @@ const BookAppointment = () => {
     return (
         <div className="book-appointment ">
             <section className="hero-section text-center py-5 " style={{ marginBottom: "0" }}>
-                <div className="container" style={{ marginTop: "1rem" }}>
+                <div className="container" style={{ marginTop: "2rem" }}>
                     <h1 className="text-primaryy mb-3">Book Your Appointment</h1>
                     <p className="text-muted">
                         Schedule your visit with ease and convenience. We’re here to provide you the best healthcare services.

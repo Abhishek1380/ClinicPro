@@ -1,8 +1,8 @@
 import React from 'react';
-import Blogs from '../components/Blogs/Blogs';
+import Blog from '../components/Blog/Blog';
 const HealthBlogPage = () => {
     return (
-        <Blogs />
+        <Blog />
     )
 }
 

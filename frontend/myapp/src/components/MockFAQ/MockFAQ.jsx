@@ -1,22 +1,22 @@
 import React, { useState, useEffect } from "react";
-import './MockFAQ.css';
-import axios from 'axios';
+import "./MockFAQ.css";
+import axios from "axios";
+import MFaq from "../../assets/FAQ.png";
 
 const MockFAQ = () => {
     const [faqList, setFaqList] = useState([]);
     const [activeIndex, setActiveIndex] = useState(null);
     const [error, setError] = useState(null);
 
-
     useEffect(() => {
         axios
-            .get('https://backend-clinic-website.onrender.com/FAQ1')
-            .then(response => {
+            .get("https://backend-clinic-website.onrender.com/FAQ1")
+            .then((response) => {
                 setFaqList(response.data);
                 setError(null);
             })
-            .catch(error => {
-                console.error('Error fetching FAQs:', error);
+            .catch((error) => {
+                console.error("Error fetching FAQs:", error);
                 setError("Failed to load FAQs. Please try again later.");
             });
     }, []);
@@ -26,27 +26,35 @@ const MockFAQ = () => {
     };
 
     return (
-        <div className="accordion">
-            <div className="image-box">
-                <img src="https://i.ibb.co/S6NQbLZ/mainImg.png" alt="FAQ" />
+        <div className="faq-wrapper">
+            <div className="faq-image">
+                <img src={MFaq} alt="FAQ Illustration" />
             </div>
-            <div className="accordion-text">
-                <div className="title text-primaryy">FAQ</div>
+
+            <div className="faq-container">
+                <h2 className="faq-title">Frequently Asked Questions</h2>
                 {error ? (
-                    <p className="error-message">{error}</p>
+                    <p className="error">{error}</p>
                 ) : (
-                    <ul className="faq-text">
+                    <div className="faq-list">
                         {faqList.map((faq, index) => (
-                            <li key={index} className={activeIndex === index ? 'showAnswer' : ''}>
-                                <div className="question-arrow" onClick={() => handleToggle(index)}>
-                                    <span className="question text-primaryy">{faq.question}</span>
-                                    <i className={`bx bxs-chevron-down arrow ${activeIndex === index ? 'rotate' : ''}`}></i>
+                            <div
+                                className={`faq-item ${activeIndex === index ? "open" : ""}`}
+                                key={index}
+                                onClick={() => handleToggle(index)}
+                            >
+                                <div className="faq-question">
+                                    {faq.question}
+                                    <span className="faq-icon">
+                                        {activeIndex === index ? "−" : "+"}
+                                    </span>
                                 </div>
-                                {activeIndex === index && <p>{faq.answer}</p>}
-                                <span className="line"></span>
-                            </li>
+                                <div className="faq-answer">
+                                    <p>{faq.answer}</p>
+                                </div>
+                            </div>
                         ))}
-                    </ul>
+                    </div>
                 )}
             </div>
         </div>

@@ -1,0 +1,82 @@
+.homeo-container {
+    width: 80%;
+    margin: auto;
+}
+
+.homeo-section {
+    padding: 40px 0;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.homeo-section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+.homeo-section-title .fa-solid {
+    color: #2e8b57;
+    margin-right: 8px;
+}
+
+.homeo-section-title .homeo-separator {
+    color: #888;
+    font-weight: 600;
+    margin: 0 6px;
+}
+
+.homeo-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    padding: 0 20px;
+}
+
+.homeo-gallery-grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.homeo-gallery-grid img:hover {
+    transform: scale(1.05);
+}
+
+.homeo-load-more {
+    display: none;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.homeo-load-more button {
+    background-color: #2e8b57;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.homeo-load-more button:hover {
+    background-color: #246b45;
+}
+
+@media (max-width: 768px) {
+    .homeo-gallery-grid img.homeo-responsive-hidden {
+        display: none;
+    }
+
+    .homeo-load-more {
+        display: flex;
+    }
+}

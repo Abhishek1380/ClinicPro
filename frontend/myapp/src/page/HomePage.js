@@ -18,7 +18,7 @@ import Services from '../components/Services/Services';
 import Why from '../components/Why/Why';
 import MockFAQ from '../components/MockFAQ/MockFAQ';
 // import SampleFAQ from '../components/SampleFAQ/sampleFAQ';
-
+import LandingPage from '../components/LandingPage/LandingPage';
 
 
 
@@ -29,7 +29,7 @@ const HomePage = () => {
 
 
 
-            <QuickDoctorInfo />
+            <LandingPage />
             <Services />
             <Why />
 

@@ -1,17 +1,26 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import "./Blogs.css";
+import "./Blog.css";
 
-const Blogs = () => {
-    const [blogs, setBlogs] = useState([]);
+const Blog = () => {
+    const [blog, setBlog] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        axios.get("https://backend-clinic-website.onrender.com/blogs")
+        axios.get("https://backend-clinic-website.onrender.com/blog")
             .then(response => {
-                setBlogs(response.data);
+                // Extract only required fields
+                const extractedBlog = response.data.map((item) => ({
+                    img: item.img_blog,
+                    title: item.blog_title,
+                    desc: item.blog_desc,
+                    date: item.date,
+                    slug: item.slug, // slugify title
+                }));
+
+                setBlog(extractedBlog);
                 setLoading(false);
             })
             .catch(error => {
@@ -41,9 +50,9 @@ const Blogs = () => {
             {error && <p className="error">{error}</p>}
 
             <div className="Blogs_div">
-                {blogs.length > 0 ? (
-                    blogs.map((blog) => (
-                        <div key={blog._id} className="Blogs_card">
+                {blog.length > 0 ? (
+                    blog.map((blog, index) => (
+                        <div key={index} className="Blogs_card">
                             <div className="Blogscard-img-holder">
                                 <img src={blog.img} alt={blog.title} />
                             </div>
@@ -51,7 +60,7 @@ const Blogs = () => {
                             <span className="Blogs_blog-time">{blog.date}</span>
                             <p className="Blogs_description">{blog.desc}</p>
                             <div className="Blogs_options">
-                                <Link to={`/blog/${blog.rank}`}>
+                                <Link to={`/blog/${blog.slug}`}>
                                     <button className="Blogs_btn">Read More</button>
                                 </Link>
                             </div>
@@ -65,4 +74,4 @@ const Blogs = () => {
     );
 };
 
-export default Blogs;
+export default Blog;

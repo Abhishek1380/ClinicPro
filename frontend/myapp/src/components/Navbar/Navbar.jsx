@@ -54,9 +54,9 @@ const Navbar = () => {
                     </li>
                     <li>
                         <Link
-                            to="/blogs"
-                            className={`font-color ${activeLink === '/blogs' ? 'active' : ''}`}
-                            onClick={() => handleLinkClick('/blogs')}
+                            to="/blog"
+                            className={`font-color ${activeLink === '/blog' ? 'active' : ''}`}
+                            onClick={() => handleLinkClick('/blog')}
                         >
                             Health Blogs
                         </Link>
@@ -68,6 +68,15 @@ const Navbar = () => {
                             onClick={() => handleLinkClick('/aboutme')}
                         >
                             About Us
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            to="/gallery"
+                            className={`font-color ${activeLink === '/gallery' ? 'active' : ''}`}
+                            onClick={() => handleLinkClick('/gallery')}
+                        >
+                            Gallery
                         </Link>
                     </li>
                     <li>
@@ -95,6 +104,14 @@ const Navbar = () => {
                     </div>
                 </div>
             </nav>
+
+            <div className="contact-banner">
+                <div className="contact-content">
+                    <a href="tel:+919876543210" className="contact-link">📞+9766830294</a>
+                    <span className="contact-divider">|</span>
+                    <a href="mailto:clinic@example.com" className="contact-link">undeabhishek91@gmail.com</a>
+                </div>
+            </div>
         </div>
     );
 };

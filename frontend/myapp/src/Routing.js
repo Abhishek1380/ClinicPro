@@ -10,8 +10,10 @@ import TreatmentDetails from './components/Treatments/TreatmentDetails';
 import AboutMePage from './page/AboutMePage';
 import HealthBlogPage from './page/HealthBlogPage';
 import AppointmentPage from './page/AppointmentPage';
-import BlogsDetail from './components/Blogs/BlogsDetail';
+import BlogDetail from './components/Blog/BlogDetail';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
+import ContactBanner from './components/ContactBanner/ContactBanner';
+import Gallery from './components/Gallery/Gallery';
 
 const BookAppointmentButton = () => {
     const navigate = useNavigate();
@@ -30,14 +32,16 @@ const Routing = () => {
         <Router>
             <ScrollToTop />
             <Navbar />
+            {/* <ContactBanner /> */}
             <div className="main_component">
                 <Routes>
                     <Route path="/" element={<HomePage />} />
                     <Route path="/treatment" element={<TreatmentPage />} />
                     <Route path="/treatment/:id" element={<TreatmentDetails />} />
                     <Route path="/aboutme" element={<AboutMePage />} />
-                    <Route path="/blogs" element={<HealthBlogPage />} />
-                    <Route path="/blogs/:rank" element={<BlogsDetail />} />
+                    <Route path="/blog" element={<HealthBlogPage />} />
+                    <Route path='/gallery' element={<Gallery />} />
+                    <Route path="/blog/:slug" element={<BlogDetail />} />
                     <Route path="/bookappointment" element={<AppointmentPage />} />
                 </Routes>
             </div>

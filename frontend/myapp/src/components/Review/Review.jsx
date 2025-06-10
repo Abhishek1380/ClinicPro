@@ -1,54 +1,62 @@
 import React, { useState, useEffect } from "react";
-import axios from 'axios';
+import axios from "axios";
 import "./Review.css";
 
-const GoogleReviews = () => {
+const Review = () => {
     const [reviews, setReviews] = useState([]);
 
     useEffect(() => {
-        axios.get('https://backend-clinic-website.onrender.com/reviews')
-            .then(response => {
+        axios
+            .get("https://backend-clinic-website.onrender.com/reviews")
+            .then((response) => {
                 setReviews(response.data);
             })
-            .catch(error => {
-                console.error('Error fetching reviews:', error);
+            .catch((error) => {
+                console.error("Error fetching reviews:", error);
             });
     }, []);
 
     return (
-        <>
-            <div className="containerr component_margin">
-                <div className="container_left">
-                    <h1>Read what our customers love about us</h1>
-                    <p>Our customers love the natural, effective solutions we provide. With personalized care and proven results, they trust us for their holistic health and wellness needs.</p>
-                    <p>Customers trust our natural remedies for effective, personalized, and holistic health solutions.</p>
-                    <button>Read our success stories</button>
-                </div>
-                <div className="container_right">
+        <section className="gr-section">
+            <div className="gr-header">
+                <h2 className="gr-title">Real People. Real Transformations.</h2>
+                <p className="gr-subtitle">
+                    Here’s what our community says. Trusted by hundreds for genuine results.
+                </p>
+                <button className="gr-cta">View All on Google</button>
+            </div>
 
-                    {reviews.map(review => (
-                        <div className="card" key={review._id}>
-                            <img src={review.profile_photo_url} alt={review.author_name} />
-                            <div className="card_content">
-
-                                <div className="card_details">
-                                    <span><i className="ri-double-quotes-l"></i></span>
-                                    <p>{review.text}</p>
-                                    <span><i className="ri-double-quotes-r"></i></span>
-
-                                    <h4>
-                                        <a href={review.author_url} target="_blank" rel="noopener noreferrer">
-                                            {review.author_name}
-                                        </a>
-                                    </h4>
-                                </div>
+            <div className="gr-carousel">
+                {reviews.map((review) => (
+                    <div className="gr-card" key={review._id}>
+                        <div className="gr-profile">
+                            <img
+                                src={review.profile_photo_url}
+                                alt={review.author_name}
+                                className="gr-avatar"
+                            />
+                            <div className="gr-meta">
+                                <h4 className="gr-author">
+                                    <a
+                                        href={review.author_url}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="gr-author-link"
+                                    >
+                                        {review.author_name}
+                                    </a>
+                                </h4>
+                                <span className="gr-stars">★★★★★</span>
                             </div>
                         </div>
-                    ))}
-                </div>
+                        <div className="gr-text-scroll">
+                            <p className="gr-text">“{review.text}”</p>
+                        </div>
+                    </div>
+                ))}
             </div>
-        </>
+        </section>
     );
 };
 
-export default GoogleReviews;
+export default Review;
