@@ -23,7 +23,14 @@ const Review = () => {
                 <p className="gr-subtitle">
                     Here’s what our community says. Trusted by hundreds for genuine results.
                 </p>
-                <button className="gr-cta">View All on Google</button>
+                <a
+                    href="https://www.google.com/maps/place/Kshitij+homoeopathic+clinic/@18.649562,73.7756456,17z/data=!4m8!3m7!1s0x3bc2b9d09eb3ce65:0x8240933884300eab!8m2!3d18.6495569!4d73.7782205!9m1!1b1!16s%2Fg%2F11h0g_36ml?entry=ttu&g_ep=EgoyMDI1MDYwOC4wIKXMDSoASAFQAw%3D%3D"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <button className="gr-cta">View All on Google</button>
+                </a>
+
             </div>
 
             <div className="gr-carousel">

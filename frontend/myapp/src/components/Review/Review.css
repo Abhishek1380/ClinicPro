@@ -11,7 +11,8 @@
 .gr-section {
     padding: 60px 10%;
     font-family: 'Inter', sans-serif;
-    background: linear-gradient(to right, #5a6b5d, #000000);
+    background: linear-gradient(to right, #282571, #000000);
+
     color: var(--gr-text-color);
 }
 

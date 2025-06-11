@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './LandingPage.css';
 import unnamedImg from '../../assets/unnamed.jpg';
 import Feedback from '../../assets/Feedback.jpg';
+import { Link } from 'react-router-dom';
 
 const LandingPage = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -66,13 +67,12 @@ const LandingPage = () => {
                             >
                                 <i className="fas fa-map-marker-alt"></i>
                             </a>
-                            <a
-                                href="#about-kshitij"
+                            <Link
+                                to="/aboutme"
                                 className="icon-btnn animated-know-more-btn"
-
                             >
                                 Know More
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
