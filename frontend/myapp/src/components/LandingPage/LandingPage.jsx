@@ -68,7 +68,8 @@ const LandingPage = () => {
                             </a>
                             <a
                                 href="#about-kshitij"
-                                className="icon-btn animated-know-more-btn"
+                                className="icon-btnn animated-know-more-btn"
+
                             >
                                 Know More
                             </a>

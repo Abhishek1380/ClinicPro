@@ -327,7 +327,7 @@ blockquote span {
 
 @media (max-width: 560px) {
     .carousel {
-        margin: 2rem auto;
+        margin: 4rem auto;
     }
 
     .carousel-slide {
@@ -357,4 +357,11 @@ blockquote span {
         width: 40px;
         height: 40px;
     }
+
+    .icon-btnn {
+        width: 60%;
+        height: 40px;
+    }
+
+
 }

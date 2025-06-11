@@ -53,7 +53,7 @@
 .faq-list {
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 2px;
 }
 
 .faq-item {

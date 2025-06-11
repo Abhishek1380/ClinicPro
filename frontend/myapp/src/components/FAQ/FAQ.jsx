@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import './FAQ.css';
 import axios from 'axios';
+import { FiHelpCircle } from 'react-icons/fi';
 
 const FAQ = () => {
     const [faqList, setFaqList] = useState([]);
@@ -16,45 +17,33 @@ const FAQ = () => {
     }, []);
 
     return (
-        <div className="container my-5 " style={{ paddingTop: "1.3rem" }}>
-            <h2 className="text-center mb-4">Frequently Asked Questions</h2>
-            <div id="faqAccordion">
-                {faqList.length > 0 ? (
-                    faqList.map((faq, index) => (
-                        <div className="card faq-card" key={index}>
-                            <div className="card-header" id={`heading${index}`} >
-                                <h5 className="mb-0">
-                                    <button
-                                        className="btn btn-link faq-btn"
-                                        type="button"
-                                        data-bs-toggle="collapse"
-                                        data-bs-target={`#collapse${index}`}
-                                        aria-expanded={index === 0 ? "true" : "false"}
-                                        aria-controls={`collapse${index}`}
-                                        style={{
-                                            color: "#218838",
-                                            fontWeight: 500
-                                        }}
-                                    >
-                                        {faq.question}
-                                    </button>
-                                </h5>
+        <section className="grid-faq-section">
+            <div className="container">
+                <div className="section-header">
+                    <FiHelpCircle className="section-icon" />
+                    <h2>How Can We Help?</h2>
+                    <p>Quick answers to your common questions</p>
+                </div>
+
+                <div className="faq-grid">
+                    {faqList.length > 0 ? (
+                        faqList.map((faq, index) => (
+                            <div className="faq-card" key={index}>
+                                <div className="card-icon">Q</div>
+                                <div className="card-content">
+                                    <h3>{faq.question}</h3>
+                                    <p>{faq.answer}</p>
+                                </div>
                             </div>
-                            <div
-                                id={`collapse${index}`}
-                                className={`collapse ${index === 0 ? "show" : ""}`}
-                                aria-labelledby={`heading${index}`}
-                                data-bs-parent="#faqAccordion"
-                            >
-                                <div className="card-body">{faq.answer}</div>
-                            </div>
+                        ))
+                    ) : (
+                        <div className="no-faqs">
+                            <p>No FAQs available at the moment.</p>
                         </div>
-                    ))
-                ) : (
-                    <div className="text-center">No FAQs available.</div>
-                )}
+                    )}
+                </div>
             </div>
-        </div>
+        </section>
     );
 };
 

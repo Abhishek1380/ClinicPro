@@ -48,7 +48,7 @@ const Footer = () => {
                 </div>
 
                 <div className="footer-bottom">
-                    <p>&copy; {new Date().getFullYear()} Your Clinic Name. All Rights Reserved.</p>
+                    <p>&copy; {new Date().getFullYear()} Kshitij Homeopathic Clinic. All Rights Reserved.</p>
                     <div className="legal-links">
                         <Link to="/privacy-policy">Privacy Policy</Link>
                         <Link to="/terms">Terms of Service</Link>
