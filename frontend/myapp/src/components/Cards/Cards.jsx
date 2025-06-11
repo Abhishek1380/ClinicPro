@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Cards.css';
+import './Cards.css'; // Renamed CSS file to match component
 
 const treatments = [
     {
@@ -61,32 +61,53 @@ const Cards = () => {
     };
 
     return (
-        <>
-            <h5 className="Page_title text-center" style={{ display: 'flex', textAlign: 'center' }}>
-                <span><i className="ri-hospital-line"></i><i className="ri-arrow-right-s-line"></i></span>
-                Learn about our treatments
-            </h5>
-            <div className="cards_treatments__grid">
+        <section className="trt-cards-section">
+            <div className="trt-cards-header">
+                <div className="trt-cards-header-icon">
+                    <i className="ri-hospital-line"></i>
+                    <i className="ri-arrow-right-s-line"></i>
+                </div>
+                <h2 className="trt-cards-title">Learn About Our Treatments</h2>
+                <p className="trt-cards-subtitle">Click on any treatment to learn more</p>
+            </div>
 
+            <div className="trt-cards-grid">
                 {treatments.map((treatment, index) => (
                     <div
                         key={index}
-                        className={`cards_treatment__card ${flippedIndices.includes(index) ? 'flipped' : ''}`}
+                        className={`trt-card ${flippedIndices.includes(index) ? 'trt-card-flipped' : ''}`}
                         onClick={() => toggleFlip(index)}
                     >
-                        <div className="cards_treatment__inner">
-                            <div className="cards_treatment__front">
-                                <img src={treatment.img} alt={treatment.title} />
-                                <h3>{treatment.title}</h3>
+                        <div className="trt-card-inner">
+                            <div className="trt-card-front">
+                                <div className="trt-card-image-overlay"></div>
+                                <img
+                                    src={treatment.img}
+                                    alt={treatment.title}
+                                    className="trt-card-image"
+                                    loading="lazy"
+                                />
+                                <div className="trt-card-content">
+                                    <h3 className="trt-card-title">{treatment.title}</h3>
+                                    <div className="trt-card-hint">
+                                        <i className="ri-information-line"></i>
+                                    </div>
+                                </div>
                             </div>
-                            <div className="cards_treatment__back">
-                                {treatment.desc}
+                            <div className="trt-card-back">
+                                <div className="trt-card-back-content">
+                                    <h3 className="trt-card-back-title">{treatment.title}</h3>
+                                    <p className="trt-card-back-desc">{treatment.desc}</p>
+                                    <button className="trt-card-learn-more-btn">
+                                        Learn More <i className="ri-arrow-right-line"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 ))}
             </div>
-        </>
+        </section>
     );
 };
 
