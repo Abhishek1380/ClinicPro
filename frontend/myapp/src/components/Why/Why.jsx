@@ -59,7 +59,7 @@ const Why = () => {
                         />
                         <div className="image-overlay"></div>
                         <div className="experience-badge">
-                            <span>10+</span>
+                            <span>14+</span>
                             <p>Years of Healing Experience</p>
                         </div>
                     </div>
