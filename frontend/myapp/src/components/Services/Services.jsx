@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Services.css';
 
 const Services = () => {
@@ -35,6 +36,15 @@ const Services = () => {
         }
     ];
 
+    const encodeTitle = (title) => {
+        return title
+            .toLowerCase()
+            .replace(/&/g, 'and')
+            .replace(/['’]/g, '')
+            .replace(/[^a-z0-9]+/g, '-')
+            .replace(/^-+|-+$/g, '');
+    };
+
     return (
         <section className="services-section" id="services">
             <div className="services-container">
@@ -42,7 +52,7 @@ const Services = () => {
                     <h2 className="section-title">Our Holistic Services</h2>
                     <p className="section-subtitle">
                         Homeopathy offers a gentle yet effective approach to healing that works with your body's natural
-                        processes. Each treatment is carefully selected to match your unique symptoms and constitution.
+                        processes...
                     </p>
                 </div>
 
@@ -55,7 +65,9 @@ const Services = () => {
                             <h3 className="card-title">{service.title}</h3>
                             <p className="card-description">{service.description}</p>
                             <div className="card-hover-content">
-                                <button className="consult-btn">Learn More</button>
+                                <Link to={`/service/${encodeTitle(service.title)}`}>
+                                    <button className="consult-btn">Learn More</button>
+                                </Link>
                             </div>
                         </div>
                     ))}

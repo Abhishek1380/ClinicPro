@@ -99,7 +99,7 @@ const Footer = () => {
                         )}
                         <div className="opening-hours">
                             <h4><i className="far fa-clock"></i> Opening Hours</h4>
-                            <p>Mon-Sat: 9:00 AM - 8:00 PM</p>
+                            <p>Mon-Sat: 9:00- 1:00 AM & 5:00-9:00 PM</p>
                             <p>Sunday: Emergency Only</p>
                         </div>
                     </div>

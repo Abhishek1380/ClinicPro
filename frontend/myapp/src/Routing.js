@@ -14,6 +14,9 @@ import BlogDetail from './components/Blog/BlogDetail';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import ContactBanner from './components/ContactBanner/ContactBanner';
 import Gallery from './components/Gallery/Gallery';
+import DetailPage from './components/DetailPage/DetailPage';
+import ServiceDetail from './components/ServiceDetail/ServiceDetail';
+
 
 const BookAppointmentButton = () => {
     const navigate = useNavigate();
@@ -43,6 +46,8 @@ const Routing = () => {
                     <Route path='/gallery' element={<Gallery />} />
                     <Route path="/blog/:slug" element={<BlogDetail />} />
                     <Route path="/bookappointment" element={<AppointmentPage />} />
+                    {/* <Route path='/detail' element={<DetailPage />} /> */}
+                    <Route path="/service/:title" element={<ServiceDetail />} />
                 </Routes>
             </div>
             <Footer />
