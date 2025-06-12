@@ -89,7 +89,9 @@ const ServiceDetail = () => {
                             <div className="consultation-card">
                                 <h4>Personalized Consultation</h4>
                                 <p>Each treatment is customized to your unique symptoms and health history</p>
-                                <button className="consult-btn">Book an Appointment</button>
+                                <Link to="/bookappointment">
+                                    <button className="consult-btn">Book an Appointment</button>
+                                </Link>
                             </div>
                         </div>
                     </div>
