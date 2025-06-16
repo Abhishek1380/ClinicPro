@@ -18,7 +18,7 @@ import DetailPage from './components/DetailPage/DetailPage';
 import ServiceDetail from './components/ServiceDetail/ServiceDetail';
 
 
-const BookAppointmentButton = () => {
+const BookAppointmentButtonc = () => {
     const navigate = useNavigate();
 
     return (
@@ -51,7 +51,7 @@ const Routing = () => {
                 </Routes>
             </div>
             <Footer />
-            <BookAppointmentButton />
+            <BookAppointmentButtonc />
         </Router>
     );
 };

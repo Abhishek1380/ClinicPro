@@ -91,7 +91,7 @@ const ServiceDetail = () => {
                                 <p>Each treatment is customized to your unique symptoms and health history</p>
                                 <Link to="/bookappointment">
                                     <button className="consult-btn">Book an Appointment</button>
-                                </Link>
+                                </Link >
                             </div>
                         </div>
                     </div>
