@@ -222,7 +222,7 @@
 }
 
 .hours {
-    color: var(--light-text);
+    color: #000000;
     text-align: right;
 }
 
