@@ -16,6 +16,8 @@ import ContactBanner from './components/ContactBanner/ContactBanner';
 import Gallery from './components/Gallery/Gallery';
 import DetailPage from './components/DetailPage/DetailPage';
 import ServiceDetail from './components/ServiceDetail/ServiceDetail';
+// import CardDetail from './components/CardDetail/CardDetail';
+import HomeopathyTreatmentDetail from './components/TreatmentComponent/HomeopathyTreatmentDetail';
 
 
 const BookAppointmentButtonc = () => {
@@ -48,6 +50,8 @@ const Routing = () => {
                     <Route path="/bookappointment" element={<AppointmentPage />} />
                     {/* <Route path='/detail' element={<DetailPage />} /> */}
                     <Route path="/service/:title" element={<ServiceDetail />} />
+                    {/* <Route path='cardindetail' element={<CardDetail />} /> */}
+                    <Route path="/treatments/:id" element={<HomeopathyTreatmentDetail />} />
                 </Routes>
             </div>
             <Footer />

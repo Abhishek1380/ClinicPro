@@ -22,7 +22,7 @@ const LandingPage = () => {
     useEffect(() => {
         const intervalId = setInterval(() => {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % dots.length);
-        }, 50000);
+        }, 500000);
         return () => clearInterval(intervalId);
     }, []);
 
@@ -32,7 +32,7 @@ const LandingPage = () => {
                 className="carousel-track"
                 style={{ transform: `translateX(-${currentIndex * 100}%)` }}
             >
-                {/* Slide 1 */}
+
                 <div className="carousel-slide">
                     <div className="slide-image">
                         <img src={unnamedImg} alt="Kshitij Clinic" />
@@ -42,12 +42,12 @@ const LandingPage = () => {
                         <p>
                             <strong>Kshitij Homeopathy Clinic</strong> is one of the best homeopathic clinics in Akurdi.
                             <strong> Dr. Satish Nichit</strong> has been treating patients for over 14 years and has
-                            successfully cared for hundreds of individuals.
+                            successfully cared for thousands of individuals.
                         </p>
                         <ul className="benefits-list">
                             <li>Best Homeopathic Clinic in Akurdi.</li>
                             <li>Serving patients since 14 years.</li>
-                            <li>Treated hundreds of patients successfully.</li>
+                            <li>Treated thousands of patients successfully.</li>
                             <li>Top clinic in Akurdi and PCMC area.</li>
                         </ul>
                         <div className="social-links-icons">
@@ -77,7 +77,7 @@ const LandingPage = () => {
                     </div>
                 </div>
 
-                {/* Slide 2 */}
+
                 <div className="carousel-slide">
                     <div className="slide-image">
                         <img src={Feedback} alt="Stories of Healing" />
@@ -118,7 +118,7 @@ const LandingPage = () => {
                 </div>
             </div>
 
-            {/* Dots */}
+
             <div className="carousel-dots">
                 {dots.map((_, index) => (
                     <span

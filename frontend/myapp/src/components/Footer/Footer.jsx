@@ -107,7 +107,7 @@ const Footer = () => {
 
                 <div className="footer-bottom">
                     <div className="footer-logo">
-                        <img src="/logo-white.png" alt="Kshitij Homeopathic Clinic" />
+                        <img src="https://i.ibb.co/kDFGgD7/San.png" alt="Kshitij Homeopathic Clinic" />
 
                         <p>Healing Naturally, Restoring Balance</p>
                     </div>

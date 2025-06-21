@@ -45,14 +45,14 @@
 .section-title::after {
     content: '';
     position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px;
+    bottom: -5px;
+    left: 22%;
+    width: 54%;
     height: 4px;
-    background: var(--secondary);
+    background: #5057bc;
     border-radius: 2px;
 }
+
 
 .section-subtitle {
     max-width: 700px;
@@ -187,6 +187,10 @@
 
     .services-grid {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .service-card {
+        padding: 1rem 1rem;
     }
 }
 
