@@ -5,10 +5,22 @@ import './AboutMe.css';
 const AboutMe = () => {
     const doctorInfo = {
         name: "Dr. Satish Nichit, MD Homeopathy",
-        biography: "Kshitij Homoeopathic Clinic was established in 2011. Since then, we have been treating patients through a holistic approach. Our chief objective is to provide quick and effective treatment. We believe the mind and body are connected—so when a person suffers from disease, there is a disturbance in both body and mental levels. We conduct a detailed and careful study of the patient’s emotional, stress, and physical complaints before prescribing constitutional medicine and conducting follow-ups. We have successfully treated more than 20,000 patients using homeopathy. We also run awareness programs and free health check-up camps for the needy. From common cold (coryza) to cancer, we offer treatment for a wide range of diseases. Our motto is to heal with homeopathy. Patient testimonials on platforms like Google show the trust and success we’ve earned over time.",
+        biography: `
+        <p><strong>Kshitij Homoeopathic Clinic</strong> was established in 2011. Since then, we treat people with a <mark>holistic approach</mark>. Our chief objective is to provide <mark>quick and best treatment</mark> for our patients. Our treatment is based on a holistic approach.</p>
+
+        <p>Our <strong>mind and body are connected</strong>. So, when a patient suffers from disease, there is disturbance in his body as well as mind level. So, we do a <mark>detailed and careful study</mark> of both <strong>mind, emotion, stress, and physical complaints</strong>, and then give <strong>constitutional medicine</strong> based on subsequent follow-ups on initial appointment.</p>
+
+        <p>We have <strong>treated more than 20,000 patients successfully</strong> with homoeopathy. We also conduct <strong>patient awareness programs</strong>, which have been responded to very well by our patients. We have also conducted many <mark>free health check-up camps</mark> for needy people.</p>
+
+        <p>We offer treatment of many diseases starting from <mark>simple coryza to cancer</mark>.  
+        <br/><strong>Our motto is:</strong> <mark>Heal Patients with Homoeopathy</mark>.</p>
+
+        <p>Our patients have given their <strong>reviews/testimonials</strong> on many digital platforms, including Google.  
+        <br/>This shows the amount of <mark>trust and success</mark> we have achieved in our practice.</p>
+    `,
         education: [
-            "MD Homeopathy",
-            "BHMS (Bachelor of Homeopathic Medicine & Surgery)"
+            "<strong style='color: #2a7ae2;'>B.H.M.S.</strong> from Ahilyanagar Kakasaheb Mhaske Homoeopathic College, which has been one of the best and most dedicated homoeopathic educational institutes in Maharashtra since the early inception of homoeopathy in the state.",
+            "<strong style='color: #2a7ae2;'>M.D. (Homeopath)</strong> from A.L. Dhawale Memorial Homoeopathic Institute, Palghar, Mumbai in Homoeopathic Materia Medica. The college has marked its excellence in homoeopathic training and postgraduate education in the country. It has been awarded CENTRE OF EXCELLENCE by the Ministry of AYUSH."
         ],
         experience: "14+ years of clinical practice",
         specializations: [
@@ -19,9 +31,10 @@ const AboutMe = () => {
         ]
     };
 
+
     const images = [
         "https://i.ibb.co/thbYYBk/doccccc.jpg",
-        "https://i.ibb.co/RHbN5Ch/images.jpg"
+        // "https://i.ibb.co/RHbN5Ch/images.jpg"
     ];
 
     const [activeImageIndex, setActiveImageIndex] = React.useState(0);
@@ -78,7 +91,8 @@ const AboutMe = () => {
                             <FaUserMd className="am-detail-icon" />
                             Biography
                         </h3>
-                        <p className="am-detail-text">{doctorInfo.biography}</p>
+                        <div className="am-detail-text" dangerouslySetInnerHTML={{ __html: doctorInfo.biography }} />
+
                     </div>
 
                     <div className="am-detail-card">
@@ -88,7 +102,11 @@ const AboutMe = () => {
                         </h3>
                         <ul className="am-detail-list">
                             {doctorInfo.education.map((item, index) => (
-                                <li key={index} className="am-detail-item">{item}</li>
+                                <li
+                                    key={index}
+                                    className="am-detail-item"
+                                    dangerouslySetInnerHTML={{ __html: item }}
+                                />
                             ))}
                         </ul>
                     </div>

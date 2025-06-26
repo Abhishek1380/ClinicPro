@@ -98,9 +98,9 @@ const Cards = () => {
                                 <div className="trt-card-back-content">
                                     <h3 className="trt-card-back-title">{treatment.title}</h3>
                                     <p className="trt-card-back-desc">{treatment.desc}</p>
-                                    <button className="trt-card-learn-more-btn">
+                                    {/* <button className="trt-card-learn-more-btn">
                                         Learn More <i className="ri-arrow-right-line"></i>
-                                    </button>
+                                    </button> */}
                                 </div>
                             </div>
                         </div>
