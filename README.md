@@ -8,6 +8,7 @@ This was a freelance project built using the **MERN stack (MongoDB, Express.js, 
 
 ---
 
+
 ## ✨ Features
 
 - Clean and modern UI
