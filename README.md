@@ -45,42 +45,62 @@ This was a freelance project built using the **MERN stack (MongoDB, Express.js, 
 
 ## 📸 Screenshots
 
-_Replace these with your actual screenshots:_
+> Below are raw UI screenshots from the live site:
 
-![Homepage](./screenshots/homepage.png)
-![Doctor Section](./screenshots/doctor.png)
-![Services](./screenshots/services.png)
-![Appointment Form](./screenshots/appointment.png)
-![Mobile View](./screenshots/mobile.png)
-![Contact](./screenshots/contact.png)
-![Map Section](./screenshots/map.png)
-![Footer](./screenshots/footer.png)
+<p align="center">
+  <img src="./frontend/website-screenshots/Screenshot-16.png" width="800" />
+  <img src="./frontend/website-screenshots/Screenshot-17.png" width="800" />
+  <img src="./frontend/website-screenshots/Screenshot-18.png" width="800" />
+  <img src="./frontend/website-screenshots/Screenshot-19.png" width="800" />
+  <img src="./frontend/website-screenshots/Screenshot-20.png" width="800" />
+  <img src="./frontend/website-screenshots/Screenshot-21.png" width="800" />
+  <img src="./frontend/website-screenshots/Screenshot-22.png" width="800" />
+  <img src="./frontend/website-screenshots/Screenshot-23.png" width="800" />
+  <img src="./frontend/website-screenshots/Screenshot-24.png" width="800" />
+  <img src="./frontend/website-screenshots/Screenshot-25.png" width="800" />
+  <img src="./frontend/website-screenshots/Screenshot-26.png" width="800" />
+  <img src="./frontend/website-screenshots/Screenshot-27.png" width="800" />
+  <img src="./frontend/website-screenshots/Screenshot-28.png" width="800" />
+  <img src="./frontend/website-screenshots/Screenshot-29.png" width="800" />
+  <img src="./frontend/website-screenshots/Screenshot-30.png" width="800" />
+</p>
+
 
 ---
 
-## 🎥 Demo Video
 
-_Embed a YouTube or Google Drive video if available:_
-
-[![Watch Demo](https://img.youtube.com/vi/VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=VIDEO_ID_HERE)
-
----
 
 ## 📁 Project Structure (MERN)
 
 clinic-website/
-├── client/ # React Frontend
-│ ├── public/
-│ └── src/
-│ ├── components/
-│ ├── pages/
-│ └── App.jsx
-├── server/ # Node + Express Backend
-│ ├── routes/
-│ └── models/
-├── .env
+├── client/                         # React frontend
+│   ├── public/
+│   └── src/
+│       ├── components/
+│       ├── pages/
+│       ├── App.jsx
+│       └── index.js
+│
+├── server/                         # Node.js + Express backend
+│   ├── routes/
+│   ├── controllers/
+│   ├── models/
+│   ├── config/
+│   └── index.js or app.js
+│
+├── assets/                         # Media assets for README
+│   ├── screenshots/
+│   │   ├── Screenshots-16
+│   │   ├── Screenshots-17
+│   │   ├── Screenshots-18
+│   │   ├── Screenshots-19
+│   │   └── .... Screenshot-30             
+│
+├── .env                            # Environment variables
+├── .gitignore
+├── README.md
 ├── package.json
-└── README.md
+└── LICENSE (optional)
 
 
 ---
@@ -90,9 +110,9 @@ clinic-website/
 This project was created as a freelance project.
 
 **Developed by**: Abhishek Santosh Unde  
-📧 Email: [your-email@example.com]  
-🌐 Portfolio: [your-portfolio-link.com]  
-💼 LinkedIn: [linkedin.com/in/your-profile](https://linkedin.com/in/your-profile)
+📧 Email: undeabhishek91@gmail.com 
+🌐 Portfolio:  
+💼 LinkedIn: www.linkedin.com/in/abhishek-santosh-unde-434212346
 
 ---
 
