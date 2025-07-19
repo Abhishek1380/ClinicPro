@@ -49,7 +49,7 @@ This was a freelance project built using the **MERN stack (MongoDB, Express.js, 
 > Below are raw UI screenshots from the live site:
 
 <p align="center">
-  <img src="./frontend/website-screenshots/Screenshot-16.png" width="800" />
+  <img src="./website-screenshots/Screenshot-16.png" width="800" />
   <img src="./frontend/website-screenshots/Screenshot-17.png" width="800" />
   <img src="./frontend/website-screenshots/Screenshot-18.png" width="800" />
   <img src="./frontend/website-screenshots/Screenshot-19.png" width="800" />
