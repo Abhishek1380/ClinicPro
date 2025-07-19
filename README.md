@@ -50,20 +50,20 @@ This was a freelance project built using the **MERN stack (MongoDB, Express.js, 
 
 <p align="center">
   <img src="./website-screenshots/Screenshot-16.png" width="800" />
-  <img src="./frontend/website-screenshots/Screenshot-17.png" width="800" />
-  <img src="./frontend/website-screenshots/Screenshot-18.png" width="800" />
-  <img src="./frontend/website-screenshots/Screenshot-19.png" width="800" />
-  <img src="./frontend/website-screenshots/Screenshot-20.png" width="800" />
-  <img src="./frontend/website-screenshots/Screenshot-21.png" width="800" />
-  <img src="./frontend/website-screenshots/Screenshot-22.png" width="800" />
-  <img src="./frontend/website-screenshots/Screenshot-23.png" width="800" />
-  <img src="./frontend/website-screenshots/Screenshot-24.png" width="800" />
-  <img src="./frontend/website-screenshots/Screenshot-25.png" width="800" />
-  <img src="./frontend/website-screenshots/Screenshot-26.png" width="800" />
-  <img src="./frontend/website-screenshots/Screenshot-27.png" width="800" />
-  <img src="./frontend/website-screenshots/Screenshot-28.png" width="800" />
-  <img src="./frontend/website-screenshots/Screenshot-29.png" width="800" />
-  <img src="./frontend/website-screenshots/Screenshot-30.png" width="800" />
+  <img src="./website-screenshots/Screenshot-17.png" width="800" />
+  <img src="./website-screenshots/Screenshot-18.png" width="800" />
+  <img src="./website-screenshots/Screenshot-19.png" width="800" />
+  <img src="./website-screenshots/Screenshot-20.png" width="800" />
+  <img src="./website-screenshots/Screenshot-21.png" width="800" />
+  <img src="./website-screenshots/Screenshot-22.png" width="800" />
+  <img src="./website-screenshots/Screenshot-23.png" width="800" />
+  <img src="./website-screenshots/Screenshot-24.png" width="800" />
+  <img src="./website-screenshots/Screenshot-25.png" width="800" />
+  <img src="./website-screenshots/Screenshot-26.png" width="800" />
+  <img src="./website-screenshots/Screenshot-27.png" width="800" />
+  <img src="./website-screenshots/Screenshot-28.png" width="800" />
+  <img src="./website-screenshots/Screenshot-29.png" width="800" />
+  <img src="./website-screenshots/Screenshot-30.png" width="800" />
 </p>
 
 
