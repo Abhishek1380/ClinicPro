@@ -8,6 +8,7 @@ This was a freelance project built using the **MERN stack (MongoDB, Express.js, 
 
 ---
 
+
 ## ✨ Features
 
 - Clean and modern UI
@@ -48,7 +49,7 @@ This was a freelance project built using the **MERN stack (MongoDB, Express.js, 
 > Below are raw UI screenshots from the live site:
 
 <p align="center">
-  <img src="./frontend/website-screenshots/Screenshot-16.png" width="800" />
+  <img src="./website-screenshots/Screenshot-16.png" width="800" />
   <img src="./frontend/website-screenshots/Screenshot-17.png" width="800" />
   <img src="./frontend/website-screenshots/Screenshot-18.png" width="800" />
   <img src="./frontend/website-screenshots/Screenshot-19.png" width="800" />
@@ -72,36 +73,7 @@ This was a freelance project built using the **MERN stack (MongoDB, Express.js, 
 
 ## 📁 Project Structure (MERN)
 
-clinic-website/
-├── client/                         # React frontend
-│   ├── public/
-│   └── src/
-│       ├── components/
-│       ├── pages/
-│       ├── App.jsx
-│       └── index.js
-│
-├── server/                         # Node.js + Express backend
-│   ├── routes/
-│   ├── controllers/
-│   ├── models/
-│   ├── config/
-│   └── index.js or app.js
-│
-├── assets/                         # Media assets for README
-│   ├── screenshots/
-│   │   ├── Screenshots-16
-│   │   ├── Screenshots-17
-│   │   ├── Screenshots-18
-│   │   ├── Screenshots-19
-│   │   └── .... Screenshot-30             
-│
-├── .env                            # Environment variables
-├── .gitignore
-├── README.md
-├── package.json
-└── LICENSE (optional)
-
+<pre lang="markdown"><code> ``` clinic-website/ ├── frontend/ │ ├── myapp/ │ │ ├── public/ │ │ └── src/ │ │ ├── components/ │ │ ├── pages/ │ │ ├── App.jsx │ │ └── index.js │ └── website-screenshots/ │ ├── Screenshot-16.png │ ├── Screenshot-17.png │ ├── ... │ └── Screenshot-30.png ├── .env ├── .gitignore ├── README.md ├── package.json └── LICENSE (optional) ``` </code></pre>
 
 ---
 
