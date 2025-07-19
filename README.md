@@ -1,93 +1,77 @@
-# 🏥 Clinic-Website – Kshitij Homeopathy Clinic
+# 🏥 ClinicPro – Kshitij Homeopathy Website
 
-A fully responsive and modern **Clinic Website** built for **Kshitij Homeopathy Clinic** to showcase their clinic details, help patients book appointments easily, and improve the clinic's online visibility.
+A modern, responsive clinic website developed for **Kshitij Homeopathy Clinic** to help patients explore services, learn about the doctor, and request appointments easily.  
+This live production site was built as a freelance MERN-stack project, designed with a mobile-first approach and clean UX.
 
-This was a freelance project built using the **MERN stack (MongoDB, Express.js, React.js, Node.js)** with a small backend (no login/signup). The site is live and hosted on custom domain and cloud platforms.
-
-🔗 **Live Site**: [www.kshitijhomoeopathy.com](https://www.kshitijhomoeopathy.com/)
-
----
-
-
-## ✨ Features
-
-- Clean and modern UI
-- Mobile & tablet responsive
-- Clinic introduction with services
-- Doctor profile & credentials
-- Appointment booking form (connects to backend)
-- Contact section with map
-- Optimized to drive more local traffic
+🔗 **Live Site**: [www.kshitijhomoeopathy.com](https://www.kshitijhomoeopathy.com/)  
+📦 **Repo**: [github.com/Abhishek1380/ClinicPro](https://github.com/Abhishek1380/ClinicPro)
 
 ---
 
-## 🧰 Tech Stack
+## ✨ Key Features
 
-| Technology    | Description                     |
-|---------------|---------------------------------|
-| React.js      | Frontend UI framework           |
-| Node.js       | Backend runtime environment     |
-| Express.js    | REST API for appointment form   |
-| MongoDB       | Stores appointment submissions  |
-| HTML & CSS    | Structure and styling           |
-| JavaScript    | Dynamic interactions            |
+- ✅ Clean, responsive UI (mobile, tablet, desktop)
+- 🧑‍⚕️ Doctor profile, credentials, and clinic intro
+- 📅 Appointment form (email + backend API)
+- 🗺️ Google Maps clinic location
+- ⚙️ Optimized for SEO + performance
 
 ---
 
-## 🌍 Hosting Info
+## 🔧 Tech Stack
 
-| Part         | Platform        |
-|--------------|-----------------|
-| Domain       | Hostinger       |
-| Frontend     | Vercel          |
-| Backend API  | Render          |
+| Tech        | Purpose                          |
+|-------------|----------------------------------|
+| React.js    | Frontend UI                      |
+| Node.js     | Backend server                   |
+| Express.js  | API for appointment form         |
+| MongoDB     | Stores appointment entries       |
+| Render      | Backend hosting                  |
+| Vercel      | Frontend hosting                 |
+| Hostinger   | Domain management                |
 
 ---
 
 ## 📸 Screenshots
 
-> Below are raw UI screenshots from the live site:
-
 <p align="center">
-  <img src="./website-screenshots/Screenshot-16.png" width="800" />
-  <img src="./website-screenshots/Screenshot-17.png" width="800" />
-  <img src="./website-screenshots/Screenshot-18.png" width="800" />
-  <img src="./website-screenshots/Screenshot-19.png" width="800" />
-  <img src="./website-screenshots/Screenshot-20.png" width="800" />
-  <img src="./website-screenshots/Screenshot-21.png" width="800" />
-  <img src="./website-screenshots/Screenshot-22.png" width="800" />
-  <img src="./website-screenshots/Screenshot-23.png" width="800" />
-  <img src="./website-screenshots/Screenshot-24.png" width="800" />
-  <img src="./website-screenshots/Screenshot-25.png" width="800" />
-  <img src="./website-screenshots/Screenshot-26.png" width="800" />
-  <img src="./website-screenshots/Screenshot-27.png" width="800" />
-  <img src="./website-screenshots/Screenshot-28.png" width="800" />
-  <img src="./website-screenshots/Screenshot-29.png" width="800" />
-  <img src="./website-screenshots/Screenshot-30.png" width="800" />
+  <img src="./website-screenshots/Screenshot-16.png" width="800" alt="Homepage" />
+  <img src="./website-screenshots/Screenshot-18.png" width="800" alt="Doctor Section" />
+  <img src="./website-screenshots/Screenshot-23.png" width="800" alt="Appointment Form" />
+  <img src="./website-screenshots/Screenshot-29.png" width="800" alt="Mobile View" />
 </p>
 
+---
+
+## 🚀 Hosting Setup
+
+| Part       | Platform    |
+|------------|-------------|
+| Domain     | Hostinger   |
+| Frontend   | Vercel      |
+| Backend    | Render      |
 
 ---
 
+## 💼 About the Project
 
-
-## 📁 Project Structure (MERN)
-
-<pre lang="markdown"><code> ``` clinic-website/ ├── frontend/ │ ├── myapp/ │ │ ├── public/ │ │ └── src/ │ │ ├── components/ │ │ ├── pages/ │ │ ├── App.jsx │ │ └── index.js │ └── website-screenshots/ │ ├── Screenshot-16.png │ ├── Screenshot-17.png │ ├── ... │ └── Screenshot-30.png ├── .env ├── .gitignore ├── README.md ├── package.json └── LICENSE (optional) ``` </code></pre>
+This project was developed as a **freelance commission** for a live clinic.  
+The client wanted a clean, mobile-friendly website that could be used by both new and existing patients to explore treatments and request consultations.  
+It currently operates in production.
 
 ---
 
-## 📩 Contact
+## 👨‍💻 Developer Info
 
-This project was created as a freelance project.
-
-**Developed by**: Abhishek Santosh Unde  
-📧 Email: undeabhishek91@gmail.com 
-🌐 Portfolio:  
-💼 LinkedIn: www.linkedin.com/in/abhishek-santosh-unde-434212346
+**Abhishek Santosh Unde**  
+📧 Email: undeabhishek91@gmail.com  
+🔗 [LinkedIn](https://www.linkedin.com/in/abhishek-santosh-unde-434212346)  
+💻 [GitHub](https://github.com/Abhishek1380)
 
 ---
 
 ## 🙏 Acknowledgment
 
-Special thanks to **Kshitij Homeopathy Clinic** for trusting me with their online platform.
+Special thanks to **Kshitij Homeopathy Clinic** for trusting me with their digital platform.
+
+---
