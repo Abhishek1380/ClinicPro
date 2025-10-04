@@ -72,6 +72,6 @@ It currently operates in production.
 
 ## 🙏 Acknowledgment
 
-Special thanks to **Kshitij Homeopathy Clinic** for trusting me with their digital platform.
+Special thanks to **Kshitij Homeopathy Clinic** for trusting me with their digital platformm.
 
 ---
