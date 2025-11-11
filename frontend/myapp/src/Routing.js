@@ -18,6 +18,7 @@ import DetailPage from './components/DetailPage/DetailPage';
 import ServiceDetail from './components/ServiceDetail/ServiceDetail';
 // import CardDetail from './components/CardDetail/CardDetail';
 import HomeopathyTreatmentDetail from './components/TreatmentComponent/HomeopathyTreatmentDetail';
+import WhatsappButton from './components/WhatsappButton/WhatsappButton';
 
 
 const BookAppointmentButtonc = () => {
@@ -56,6 +57,7 @@ const Routing = () => {
             </div>
             <Footer />
             <BookAppointmentButtonc />
+            <WhatsappButton />
         </Router>
     );
 };

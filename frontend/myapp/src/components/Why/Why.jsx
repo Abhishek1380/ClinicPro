@@ -53,7 +53,7 @@ const Why = () => {
                 <div className="why-image-container">
                     <div className="image-wrapper">
                         <img
-                            src="https://i.ibb.co/thbYYBk/doccccc.jpg"
+                            src="https://i.ibb.co/VkW5Vtq/doctor.jpg"
                             alt="Professional homeopathic consultation"
                             className="doctor-portrait"
                         />

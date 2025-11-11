@@ -33,7 +33,7 @@ const AboutMe = () => {
 
 
     const images = [
-        "https://i.ibb.co/thbYYBk/doccccc.jpg",
+        "https://i.ibb.co/DfDCDzZK/doctor-1.jpg",
         // "https://i.ibb.co/RHbN5Ch/images.jpg"
     ];
 
