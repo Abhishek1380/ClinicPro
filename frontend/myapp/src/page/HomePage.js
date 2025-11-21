@@ -1,4 +1,5 @@
 import React from 'react';
+// import Navbar from '../components/Navbar/Navbar'
 import LandingPage from '../components/LandingPage/LandingPage';
 import Services from '../components/Services/Services';
 import Why from '../components/Why/Why';
@@ -10,6 +11,8 @@ import MockFAQ from '../components/MockFAQ/MockFAQ';
 const HomePage = () => {
     return (
         <>
+
+
             <LandingPage />
             <Services />
             <Why />
