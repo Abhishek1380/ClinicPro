@@ -166,7 +166,7 @@ const Navbar = () => {
                 {/* Main Navigation */}
                 <nav className="navbar">
                     <div className="logo">
-                        <img src="https://i.ibb.co/kDFGgD7/San.png" alt="Clinic Logo" />
+                        <img src="https://i.ibb.co/qLMrpS4Q/logog.jpg" alt="Clinic Logo" />
                     </div>
 
                     <ul className={`nav-links ${isMenuActive ? 'active' : ''}`}>
