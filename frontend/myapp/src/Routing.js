@@ -70,7 +70,7 @@ const Routing = () => {
            {/* 
     <ScrollToTop />
     <Navbar />
-    {/* <ContactBanner /> */}
+     
     <div className="main_component">
         <Routes>
             <Route path="/" element={<HomePage />} />
@@ -81,16 +81,17 @@ const Routing = () => {
             <Route path='/gallery' element={<Gallery />} />
             <Route path="/blog/:slug" element={<BlogDetail />} />
             <Route path="/bookappointment" element={<AppointmentPage />} />
-            {/* <Route path='/detail' element={<DetailPage />} /> */}
+             <Route path='/detail' element={<DetailPage />} /> 
             <Route path="/service/:title" element={<ServiceDetail />} />
-            {/* <Route path='cardindetail' element={<CardDetail />} /> */}
+            {/* <Route path='cardindetail' element={<CardDetail />} /> 
             <Route path="/treatments/:id" element={<HomeopathyTreatmentDetail />} />
         </Routes>
     </div>
     <Footer />
     <BookAppointmentButtonc />
     <WhatsappButton />
-*/}
+
+                */}
 
 
         </Router>
