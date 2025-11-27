@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-route
 
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
-import './Routing.css';
+// import './Routing.css';
 import HomePage from './page/HomePage';
 import TreatmentPage from './page/TreatmentPage';
 import TreatmentDetails from './components/Treatments/TreatmentDetails';
