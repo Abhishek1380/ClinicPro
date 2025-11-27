@@ -64,8 +64,9 @@ const BookAppointmentButtonc = () => {
 const Routing = () => {
     return (
         <Router>
+        <Routes>
         <Route path="*" element={<SuspendedPage />} />
-
+        <Routes/>
             // <ScrollToTop />
             // <Navbar />
             // {/* <ContactBanner /> */}
