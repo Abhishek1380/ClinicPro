@@ -66,7 +66,7 @@ const Routing = () => {
         <Router>
         <Routes>
         <Route path="*" element={<SuspendedPage />} />
-        <Routes/>
+        </Routes>
             // <ScrollToTop />
             // <Navbar />
             // {/* <ContactBanner /> */}
