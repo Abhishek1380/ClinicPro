@@ -21,8 +21,6 @@ import HomeopathyTreatmentDetail from './components/TreatmentComponent/Homeopath
 import WhatsappButton from './components/WhatsappButton/WhatsappButton';
 
 
-
-
 const SuspendedPage = () => {
     return (
         <div style={{
@@ -61,12 +59,14 @@ const BookAppointmentButtonc = () => {
     );
 };
 
+
 const Routing = () => {
     return (
         <Router>
-        <Routes>
-        <Route path="*" element={<SuspendedPage />} />
-        </Routes>
+            <Routes>
+                <Route path="*" element={<SuspendedPage />} />
+            </Routes>
+
             // <ScrollToTop />
             // <Navbar />
             // {/* <ContactBanner /> */}
@@ -89,6 +89,7 @@ const Routing = () => {
             // <Footer />
             // <BookAppointmentButtonc />
             // <WhatsappButton />
+
         </Router>
     );
 };
