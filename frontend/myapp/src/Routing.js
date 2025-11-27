@@ -67,28 +67,31 @@ const Routing = () => {
                 <Route path="*" element={<SuspendedPage />} />
             </Routes>
 
-            // <ScrollToTop />
-            // <Navbar />
-            // {/* <ContactBanner /> */}
-            // <div className="main_component">
-            //     <Routes>
-            //         <Route path="/" element={<HomePage />} />
-            //         <Route path="/treatment" element={<TreatmentPage />} />
-            //         <Route path="/treatment/:id" element={<TreatmentDetails />} />
-            //         <Route path="/aboutme" element={<AboutMePage />} />
-            //         <Route path="/blog" element={<HealthBlogPage />} />
-            //         <Route path='/gallery' element={<Gallery />} />
-            //         <Route path="/blog/:slug" element={<BlogDetail />} />
-            //         <Route path="/bookappointment" element={<AppointmentPage />} />
-            //         {/* <Route path='/detail' element={<DetailPage />} /> */}
-            //         <Route path="/service/:title" element={<ServiceDetail />} />
-            //         {/* <Route path='cardindetail' element={<CardDetail />} /> */}
-            //         <Route path="/treatments/:id" element={<HomeopathyTreatmentDetail />} />
-            //     </Routes>
-            // </div>
-            // <Footer />
-            // <BookAppointmentButtonc />
-            // <WhatsappButton />
+           {/* 
+    <ScrollToTop />
+    <Navbar />
+    {/* <ContactBanner /> */}
+    <div className="main_component">
+        <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/treatment" element={<TreatmentPage />} />
+            <Route path="/treatment/:id" element={<TreatmentDetails />} />
+            <Route path="/aboutme" element={<AboutMePage />} />
+            <Route path="/blog" element={<HealthBlogPage />} />
+            <Route path='/gallery' element={<Gallery />} />
+            <Route path="/blog/:slug" element={<BlogDetail />} />
+            <Route path="/bookappointment" element={<AppointmentPage />} />
+            {/* <Route path='/detail' element={<DetailPage />} /> */}
+            <Route path="/service/:title" element={<ServiceDetail />} />
+            {/* <Route path='cardindetail' element={<CardDetail />} /> */}
+            <Route path="/treatments/:id" element={<HomeopathyTreatmentDetail />} />
+        </Routes>
+    </div>
+    <Footer />
+    <BookAppointmentButtonc />
+    <WhatsappButton />
+*/}
+
 
         </Router>
     );
