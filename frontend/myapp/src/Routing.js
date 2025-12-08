@@ -1,24 +1,24 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
 
-// import Navbar from './components/Navbar/Navbar';
-// import Footer from './components/Footer/Footer';
-// // import './Routing.css';
-// import HomePage from './page/HomePage';
-// import TreatmentPage from './page/TreatmentPage';
-// import TreatmentDetails from './components/Treatments/TreatmentDetails';
-// import AboutMePage from './page/AboutMePage';
-// import HealthBlogPage from './page/HealthBlogPage';
-// import AppointmentPage from './page/AppointmentPage';
-// import BlogDetail from './components/Blog/BlogDetail';
-// import ScrollToTop from './components/ScrollToTop/ScrollToTop';
-// import ContactBanner from './components/ContactBanner/ContactBanner';
-// import Gallery from './components/Gallery/Gallery';
-// import DetailPage from './components/DetailPage/DetailPage';
-// import ServiceDetail from './components/ServiceDetail/ServiceDetail';
-// // import CardDetail from './components/CardDetail/CardDetail';
-// import HomeopathyTreatmentDetail from './components/TreatmentComponent/HomeopathyTreatmentDetail';
-// import WhatsappButton from './components/WhatsappButton/WhatsappButton';
+import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
+// import './Routing.css';
+import HomePage from './page/HomePage';
+import TreatmentPage from './page/TreatmentPage';
+import TreatmentDetails from './components/Treatments/TreatmentDetails';
+import AboutMePage from './page/AboutMePage';
+import HealthBlogPage from './page/HealthBlogPage';
+import AppointmentPage from './page/AppointmentPage';
+import BlogDetail from './components/Blog/BlogDetail';
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
+import ContactBanner from './components/ContactBanner/ContactBanner';
+import Gallery from './components/Gallery/Gallery';
+import DetailPage from './components/DetailPage/DetailPage';
+import ServiceDetail from './components/ServiceDetail/ServiceDetail';
+// import CardDetail from './components/CardDetail/CardDetail';
+import HomeopathyTreatmentDetail from './components/TreatmentComponent/HomeopathyTreatmentDetail';
+import WhatsappButton from './components/WhatsappButton/WhatsappButton';
 
 
 const SuspendedPage = () => {
@@ -67,7 +67,7 @@ const Routing = () => {
                 <Route path="*" element={<SuspendedPage />} />
             </Routes>
 
-           {/* 
+            
     <ScrollToTop />
     <Navbar />
      
@@ -83,7 +83,7 @@ const Routing = () => {
             <Route path="/bookappointment" element={<AppointmentPage />} />
              <Route path='/detail' element={<DetailPage />} /> 
             <Route path="/service/:title" element={<ServiceDetail />} />
-            {/* <Route path='cardindetail' element={<CardDetail />} /> 
+            <Route path='cardindetail' element={<CardDetail />} /> 
             <Route path="/treatments/:id" element={<HomeopathyTreatmentDetail />} />
         </Routes>
     </div>
@@ -91,7 +91,7 @@ const Routing = () => {
     <BookAppointmentButtonc />
     <WhatsappButton />
 
-                */}
+                
 
 
         </Router>
