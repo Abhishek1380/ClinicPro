@@ -21,30 +21,30 @@ import HomeopathyTreatmentDetail from './components/TreatmentComponent/Homeopath
 import WhatsappButton from './components/WhatsappButton/WhatsappButton';
 
 
-const SuspendedPage = () => {
-    return (
-        <div style={{
-            background: "#111",
-            color: "#eee",
-            fontFamily: "Arial, sans-serif",
-            textAlign: "center",
-            paddingTop: "15%"
-        }}>
-            <div style={{
-                display: "inline-block",
-                background: "#222",
-                padding: "35px 45px",
-                borderRadius: "10px",
-                border: "1px solid #444"
-            }}>
-                <h1 style={{ color: "#ff4444" }}>🚫 Service Suspended</h1>
-                <p>This website is currently unavailable.</p>
-                <p>Reason: Developer payment not cleared.</p>
-                <p>Please contact the developer to restore access.</p>
-            </div>
-        </div>
-    );
-};
+// const SuspendedPage = () => {
+//     return (
+//         <div style={{
+//             background: "#111",
+//             color: "#eee",
+//             fontFamily: "Arial, sans-serif",
+//             textAlign: "center",
+//             paddingTop: "15%"
+//         }}>
+//             <div style={{
+//                 display: "inline-block",
+//                 background: "#222",
+//                 padding: "35px 45px",
+//                 borderRadius: "10px",
+//                 border: "1px solid #444"
+//             }}>
+//                 <h1 style={{ color: "#ff4444" }}>🚫 Service Suspended</h1>
+//                 <p>This website is currently unavailable.</p>
+//                 <p>Reason: Developer payment not cleared.</p>
+//                 <p>Please contact the developer to restore access.</p>
+//             </div>
+//         </div>
+//     );
+// };
 
 
 const BookAppointmentButtonc = () => {
@@ -63,9 +63,9 @@ const BookAppointmentButtonc = () => {
 const Routing = () => {
     return (
         <Router>
-            <Routes>
-                <Route path="*" element={<SuspendedPage />} />
-            </Routes>
+            // <Routes>
+            //     <Route path="*" element={<SuspendedPage />} />
+            // </Routes>
 
             
     <ScrollToTop />
