@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './LandingPage.css';
-import unnamedImg from '../../assets/unnamed.jpg';
+import Clinic_Image from '../../assets/Clinic_Image.jpeg';
 import { Link } from 'react-router-dom';
 
 const LandingPage = () => {
@@ -79,7 +79,7 @@ const LandingPage = () => {
 
                         <div className="hero-image">
                             <div className="image-frame">
-                                <img src={unnamedImg} alt="Kshitij Clinic" />
+                                <img src={Clinic_Image} alt="Kshitij Clinic" />
                                 <div className="image-badge">
                                     <div className="badge-content">
                                         <span className="badge-text">Trusted Since</span>
